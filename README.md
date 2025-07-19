@@ -6,7 +6,7 @@
   <a href="https://appcenter.elementary.io/io.github.ellie_commons.rollit"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
 </p>
 
-| ![Screenshot](data/screenshot1.png) | ![Screenshot](data/screenshot2.png) |
+| ![Screenshot](data/screenshots/screenshot1.png) | ![Screenshot](data/screenshots/screenshot2.png) |
 |------------------------------------------|-----------------------------------------|
 
 ## Roll the dice

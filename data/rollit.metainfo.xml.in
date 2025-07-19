@@ -24,16 +24,48 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshot1.png</image>
+      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshots/screenshot1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshot2.png</image>
+      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshots/screenshot2.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshot3.png</image>
+      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshots/screenshot3.png</image>
     </screenshot>
   </screenshots>
+    <content_rating type="oars-1.1"/>
+    <translation type="gettext" source_locale="en_GB">io.github.ellie_commons.rollit</translation>
+    <recommends>
+      <control>keyboard</control>
+      <control>pointing</control>
+      <control>touch</control>
+    </recommends>
+
+    <developer id="io.github.ellie-commons">
+        <name>Zelikos + Stella</name>
+    </developer>
+    <project_group>ellie-commons</project_group>
+    <url type="homepage">https://github.com/ellie-commons/rollit</url>
+    <url type="bugtracker">https://github.com/ellie-commons/rollit/issues</url>
+    <url type="help">https://github.com/ellie-commons/rollit/issues</url>
+    <url type="translate">https://github.com/ellie-commons/rollit/blob/main/po/README.md</url>
+    <url type="donation">https://ko-fi.com/teamcons</url>
+
+    <suggests>
+        <id>io.github.ellie_commons.jorts</id>
+        <id>com.github.elfenware.badger</id>
+        <id>io.github.ellie_commons.reminduck</id>
+    </suggests>
+
   <releases>
+    <release version="3.0.0" date="2025-07-24">
+      <description>
+        <p>3.0.0 Revival</p>
+        <ul>
+          <li>Updated to GTK4 with the permission of its original author @zelikos</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.1" date="2021-12-24">
       <description>
         <p>Backend Updates</p>

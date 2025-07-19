@@ -1,6 +1,6 @@
 project('io.github.ellie_commons.rollit',
     'vala', 'c',
-    version: '2.1.1')
+    version: '3.0.0')
 
 gnome = import('gnome')
 i18n = import('i18n')
