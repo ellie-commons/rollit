@@ -19,15 +19,24 @@
 public class Rollit.Application : Gtk.Application {
 
     public static GLib.Settings settings;
-    static construct {
-        settings = new GLib.Settings ("io.github.ellie_commons.rollit");
-    }
+
 
     public Application () {
         Object (
             application_id: "io.github.ellie_commons.rollit",
             flags: ApplicationFlags.FLAGS_NONE
         );
+    }
+
+    static construct {
+        settings = new GLib.Settings ("io.github.ellie_commons.rollit");
+    }
+
+    construct {
+        var quit_action = new SimpleAction ("quit", null);
+        add_action (quit_action);
+        set_accels_for_action ("app.quit", {"<Control>q"});
+        quit_action.activate.connect (quit);
     }
 
     protected override void activate () {
@@ -43,7 +52,7 @@ public class Rollit.Application : Gtk.Application {
         });
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/github/ellie_commons/rannum/styles/Application.css");
+        provider.load_from_resource ("/io/github/ellie_commons/rollit/Application.css");
         Gtk.StyleContext.add_provider_for_display (
             Gdk.Display.get_default (),
             provider,

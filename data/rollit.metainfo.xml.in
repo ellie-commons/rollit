@@ -24,13 +24,13 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshots/screenshot1.png</image>
+      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/screenshot1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshots/screenshot2.png</image>
+      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/screenshot2.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/zelikos/rannum/main/data/screenshots/screenshot3.png</image>
+      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/screenshot3.png</image>
     </screenshot>
   </screenshots>
     <content_rating type="oars-1.1"/>
@@ -169,8 +169,8 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <developer_name>Patrick Csikos</developer_name>
-  <url type="homepage">https://github.com/zelikos/rannum</url>
-  <url type="bugtracker">https://github.com/zelikos/rannum/issues</url>
+  <url type="homepage">https://github.com/zelikos/rollit</url>
+  <url type="bugtracker">https://github.com/zelikos/rollit/issues</url>
   <url type="donation">https://liberapay.com/zelikos/</url>
   <custom>
     <value key="x-appcenter-color-primary">#a56de2</value>

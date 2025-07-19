@@ -18,7 +18,8 @@
 
 public class Rollit.MainWindow : Gtk.Window {
 
-    private Rollit.Menu menu_button;
+    private Rollit.Menu menu_menu;
+    private Gtk.MenuButton menu_button;
     private Rollit.NumDisplay number_display;
     private Rollit.RollHistory roll_history;
     private Gtk.HeaderBar header;
@@ -58,7 +59,20 @@ public class Rollit.MainWindow : Gtk.Window {
         roll_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R"}, roll_button.label);
         roll_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        menu_button = new Rollit.Menu ();
+        menu_menu = new Rollit.Menu ();
+        menu_button = new Gtk.MenuButton () {
+            popover = menu_menu
+        };
+        menu_button.set_primary (true);
+
+/*          menu_menu.bind_property (
+            "label",
+            menu_button,
+            "label",
+            GLib.BindingFlags.DEFAULT
+        );  */
+
+
 
         action_buttons = new Gtk.Box (Gtk.Orientation.HORIZONTAL,6) {
             halign = Gtk.Align.CENTER
@@ -89,12 +103,10 @@ public class Rollit.MainWindow : Gtk.Window {
 
         child = grid;
 
-        show ();
-
         roll_history.visible = history_visible;
 
         roll_button.clicked.connect (e => {
-            roll_history.add_roll (number_display.num_gen (menu_button.max_roll));
+            roll_history.add_roll (number_display.num_gen (menu_menu.max_roll));
         });
 
         history_button.clicked.connect (e => {

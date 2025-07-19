@@ -16,15 +16,19 @@
  * Authored by Patrick Csikos <zelikos@pm.me>
  */
 
-public class Rollit.Menu : Gtk.MenuButton {
+public class Rollit.Menu : Gtk.Popover {
 
     public signal void close_menu ();
+    public string label;
 
     private SList<Gtk.CheckButton> dice_selection;
 
+    private Rollit.MenuItem four_sided;
     private Rollit.MenuItem six_sided;
+    private Rollit.MenuItem eight_sided;
     private Rollit.MenuItem ten_sided;
     private Rollit.MenuItem twenty_sided;
+    private Rollit.MenuItem hundred_sided;
 
     private Gtk.CheckButton custom_sided;
     private Gtk.SpinButton max_entry;
@@ -36,9 +40,12 @@ public class Rollit.Menu : Gtk.MenuButton {
     construct {
         dice_selection = new SList<Gtk.CheckButton> ();
 
+        four_sided = new Rollit.MenuItem ("d4", "<Ctrl>1");
         six_sided = new Rollit.MenuItem ("d6", "<Ctrl>1");
+        eight_sided = new Rollit.MenuItem ("d8", "<Ctrl>2");
         ten_sided = new Rollit.MenuItem ("d10", "<Ctrl>2");
         twenty_sided = new Rollit.MenuItem ("d20", "<ctrl>3");
+        hundred_sided = new Rollit.MenuItem ("d100", "<ctrl>3");
 
         var presets = new Gtk.Box (VERTICAL, 6) {
             margin_top = 6,
@@ -47,8 +54,10 @@ public class Rollit.Menu : Gtk.MenuButton {
         };
 
         presets.append (six_sided);
+        presets.append (eight_sided);
         presets.append (ten_sided);
         presets.append (twenty_sided);
+        presets.append (hundred_sided);
 
         max_entry = new Gtk.SpinButton.with_range (1, 100, 1) {
             sensitive = false
@@ -61,8 +70,11 @@ public class Rollit.Menu : Gtk.MenuButton {
         }
 
         six_sided.dice_radio.set_group (custom_sided);
+        eight_sided.dice_radio.set_group (custom_sided);
         ten_sided.dice_radio.set_group (custom_sided);
         twenty_sided.dice_radio.set_group (custom_sided);
+        hundred_sided.dice_radio.set_group (custom_sided);
+
 
         var custom_setting = new Gtk.Box (HORIZONTAL, 6) {
             margin_bottom = 12,
@@ -80,22 +92,22 @@ public class Rollit.Menu : Gtk.MenuButton {
         menu_box.append (presets);
         menu_box.append (separator);
         menu_box.append (custom_setting);
-        menu_box.show ();
-
-
 
         load_max ();
 
-        menu_popover = new Gtk.Popover ();
-        menu_popover.child = menu_box;
-        popover = menu_popover;
+        child = menu_box;
 
         label = max_roll.to_string ();
+
         tooltip_text = _("Dice settings");
         tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>D"}, tooltip_text);
 
         six_sided.clicked.connect ( () => {
             change_max (6, "d6");
+        });
+
+        eight_sided.clicked.connect ( () => {
+            change_max (8, "d8");
         });
 
         ten_sided.clicked.connect ( () => {
@@ -104,6 +116,10 @@ public class Rollit.Menu : Gtk.MenuButton {
 
         twenty_sided.clicked.connect ( () => {
             change_max (20, "d20");
+        });
+
+        hundred_sided.clicked.connect ( () => {
+            change_max (100, "d100");
         });
 
         custom_sided.toggled.connect ( () => {
@@ -115,7 +131,7 @@ public class Rollit.Menu : Gtk.MenuButton {
         });
 
         close_menu.connect ( () => {
-            popover.popdown ();
+            popdown ();
         });
     }
 
@@ -128,6 +144,10 @@ public class Rollit.Menu : Gtk.MenuButton {
                 six_sided.dice_radio.active = true;
                 max_roll = 6;
                 break;
+            case "d8":
+                eight_sided.dice_radio.active = true;
+                max_roll = 8;
+                break;
             case "d10":
                 ten_sided.dice_radio.active = true;
                 max_roll = 10;
@@ -135,6 +155,10 @@ public class Rollit.Menu : Gtk.MenuButton {
             case "d20":
                 twenty_sided.dice_radio.active = true;
                 max_roll = 20;
+                break;
+            case "d100":
+                hundred_sided.dice_radio.active = true;
+                max_roll = 100;
                 break;
             default:
                 custom_sided.active = true;

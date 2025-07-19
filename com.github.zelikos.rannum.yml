@@ -13,7 +13,7 @@ finish-args:
   - '--socket=wayland'
 
 modules:
-  - name: rannum
+  - name: rollit
     buildsystem: meson
     sources:
       - type: dir

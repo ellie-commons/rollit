@@ -14,7 +14,7 @@ subdir('src')
 
 asresources = gnome.compile_resources(
     'as-resources',
-    join_paths('data', meson.project_name()) + '.gresource.xml',
+'data/rollit.gresource.xml',
     source_dir: 'data',
     c_name: 'as'
 )

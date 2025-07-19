@@ -16,7 +16,7 @@
  * Authored by Patrick Csikos <zelikos@pm.me>
  */
 
-@define-color color_primary alpha (shade (@accent_color, 1.0), 0.5);
+/* @define-color color_primary alpha (shade (@accent_color, 1.0), 0.5); */
 
 .result-label {
     font-size: 7em;

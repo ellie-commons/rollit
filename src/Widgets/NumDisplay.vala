@@ -16,13 +16,21 @@
  * Authored by Patrick Csikos <zelikos@pm.me>
  */
 
-public class Rollit.NumDisplay : Gtk.Stack {
+public class Rollit.NumDisplay : Gtk.Box {
 
     private Gtk.Label roll_result;
+    private Gtk.Stack stack;
 
     construct {
-        transition_type = Gtk.StackTransitionType.SLIDE_UP;
-        transition_duration = 200;
+
+        orientation = Gtk.Orientation.VERTICAL;
+        spacing = 0;
+
+        stack = new Gtk.Stack () {
+            transition_type = Gtk.StackTransitionType.SLIDE_UP,
+            transition_duration = 200,
+        };
+
         hexpand = true;
         vexpand = true;
 
@@ -35,23 +43,23 @@ public class Rollit.NumDisplay : Gtk.Stack {
 
         var blank = new Gtk.Label (null);
 
-        add_named (welcome, "welcome");
-        add_named (roll_result, "roll-result");
-        add_named (blank, "blank");
-        visible_child_name = "welcome";
+        stack.add_named (welcome, "welcome");
+        stack.add_named (roll_result, "roll-result");
+        stack.add_named (blank, "blank");
+        stack.visible_child_name = "welcome";
     }
 
     public int num_gen (int max_num) {
         const int MIN_NUM = 1;
         int rnd_num;
 
-        visible_child_name = "blank";
+        stack.visible_child_name = "blank";
 
         // max_num + 1 so that max num is included in roll
         rnd_num = Random.int_range (MIN_NUM, (max_num + 1));
         roll_result.label = rnd_num.to_string ();
 
-        visible_child_name = "roll-result";
+        stack.visible_child_name = "roll-result";
 
         return rnd_num;
     }
