@@ -26,7 +26,7 @@ public class Rollit.MainWindow : Gtk.Window {
     private Gtk.Button roll_button;
     private Gtk.Button history_button;
     private Gtk.Box action_buttons;
-    private Gtk.Grid main_view;
+    private Gtk.Box main_view;
     private Gtk.Paned hp;
 
     private bool history_visible;
@@ -47,11 +47,20 @@ public class Rollit.MainWindow : Gtk.Window {
         header = new Gtk.HeaderBar ();
         title = _("Roll-It");
 
+        var label = new Gtk.Label (title);
+        label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
+        label.add_css_class (Granite.STYLE_CLASS_FLAT);
+        header.title_widget = label;
+
         history_button = new Gtk.Button.from_icon_name ("document-open-recent-symbolic") {
             tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H"}, _("Roll history"))
         };
 
         header.pack_end (history_button);
+
+
+        titlebar = header;
+
 
         number_display = new Rollit.NumDisplay ();
 
@@ -81,15 +90,14 @@ public class Rollit.MainWindow : Gtk.Window {
         action_buttons.append (roll_button);
         action_buttons.append (menu_button);
 
-        main_view = new Gtk.Grid () {
-            row_spacing = 12,
+        main_view = new Gtk.Box (Gtk.Orientation.VERTICAL, 12) {
             margin_top = 12,
             margin_bottom = 12,
             margin_start = 12,
             margin_end = 12,
         };
-        main_view.attach (number_display, 0, 0);
-        main_view.attach (action_buttons, 0, 1);
+        main_view.append (number_display);
+        main_view.append (action_buttons);
 
         roll_history = new Rollit.RollHistory ();
 
@@ -97,11 +105,11 @@ public class Rollit.MainWindow : Gtk.Window {
         hp.start_child = main_view;
         hp.end_child = roll_history;
 
-        var grid = new Gtk.Grid ();
-        grid.attach (header, 0, 0);
-        grid.attach (hp, 0, 1);
+        var handle = new Gtk.WindowHandle () {
+            child = hp
+        };
 
-        child = grid;
+        child = handle;
 
         roll_history.visible = history_visible;
 

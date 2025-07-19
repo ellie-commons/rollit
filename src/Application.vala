@@ -62,6 +62,8 @@ public class Rollit.Application : Gtk.Application {
         var window = new Rollit.MainWindow (this);
 
         add_window (window);
+
+        window.show ();
     }
 
     public static int main (string[] args) {
