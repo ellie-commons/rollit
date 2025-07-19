@@ -1,0 +1,20 @@
+app-id: io.github.ellie_commons.rollit
+
+runtime: io.elementary.Platform
+runtime-version: '6.1'
+sdk: io.elementary.Sdk
+
+command: io.github.ellie_commons.rollit
+
+finish-args:
+  - '--share=ipc'
+  - '--device=dri'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+
+modules:
+  - name: rollit
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .
