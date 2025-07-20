@@ -37,6 +37,14 @@ public class Rollit.Application : Gtk.Application {
         add_action (quit_action);
         set_accels_for_action ("app.quit", {"<Control>q"});
         quit_action.activate.connect (quit);
+
+        var toggle_history = new SimpleAction ("toggle_history", null);
+        add_action (toggle_history);
+        set_accels_for_action ("app.toggle_history", { "<Control>h", null });
+        toggle_history.activate.connect (() => {
+            var if_hist_visible = Application.settings.get_boolean ("show-history");
+            Application.settings.set_boolean ("show-history", (! if_hist_visible));
+        });
     }
 
     protected override void activate () {

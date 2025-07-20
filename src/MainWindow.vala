@@ -32,20 +32,25 @@ public class Rollit.MainWindow : Gtk.Window {
     private bool history_visible;
     private uint configure_id;
 
+
     public MainWindow (Rollit.Application app) {
         Object (
             application: app,
-            title: "Roll-It"
+            title: _("Roll-It")
         );
     }
 
     construct {
-        Gtk.init ();
+        Intl.setlocale ();
+
+        //  var toggle_history_action = new SimpleAction ("toggle_history", null);
+        //  application.add_action (toggle_history_action);
+        //  application.set_accels_for_action ("app.quit", {"<Control>h"});
+        //  toggle_history_action.activate.connect (on_history_toggled);
 
         restore_state ();
 
         header = new Gtk.HeaderBar ();
-        title = _("Roll-It");
 
         var label = new Gtk.Label (title);
         label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
@@ -103,6 +108,12 @@ public class Rollit.MainWindow : Gtk.Window {
 
         roll_history = new Rollit.RollHistory ();
 
+        Application.settings.bind (
+            "show-history",
+            roll_history, "visible",
+            SettingsBindFlags.DEFAULT
+        );
+
         hp = new Gtk.Paned (HORIZONTAL);
         hp.start_child = main_view;
         hp.end_child = roll_history;
@@ -119,10 +130,8 @@ public class Rollit.MainWindow : Gtk.Window {
             roll_history.add_roll (number_display.num_gen (menu_menu.max_roll));
         });
 
-        history_button.clicked.connect (e => {
-            roll_history.visible = !roll_history.visible;
-            Application.settings.set_boolean ("show-history", roll_history.visible);
-        });
+        history_button.clicked.connect (on_history_toggled);
+
 
         /*  var accel_group = new Gtk.AccelGroup ();
 
@@ -219,4 +228,10 @@ public class Rollit.MainWindow : Gtk.Window {
 
         history_visible = Application.settings.get_boolean ("show-history");
     }
+
+    public void on_history_toggled () {
+        Application.settings.set_boolean ("show-history", !roll_history.visible);
+    }
+
+
 }
