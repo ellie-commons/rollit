@@ -80,13 +80,12 @@ public class Rollit.MainWindow : Gtk.Window {
         };
         menu_button.set_primary (true);
 
-/*          menu_menu.bind_property (
+        menu_menu.bind_property (
             "label",
             menu_button,
             "label",
             GLib.BindingFlags.DEFAULT
-        );  */
-
+        );
 
 
         action_buttons = new Gtk.Box (Gtk.Orientation.HORIZONTAL,6) {

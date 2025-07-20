@@ -42,7 +42,7 @@ public class Rollit.MenuItem : Gtk.Button {
         child = box;
 
         clicked.connect ( () => {
-           dice_radio.toggled ();
+           dice_radio.active = true;
         });
     }
 }
