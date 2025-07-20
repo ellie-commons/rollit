@@ -16,7 +16,7 @@
  * Authored by Patrick Csikos <zelikos@pm.me>
  */
 
-public class Rollit.RollHistory : Gtk.Grid {
+public class Rollit.RollHistory : Gtk.Box {
 
     private GLib.List<PreviousRoll> previous_rolls_list;
     private Gtk.ScrolledWindow scroll_box;
@@ -25,6 +25,11 @@ public class Rollit.RollHistory : Gtk.Grid {
     public Gtk.Button clear_button;
 
     construct {
+
+        orientation = Gtk.Orientation.VERTICAL;
+        spacing = 0;
+        vexpand = true;
+
         previous_rolls_box = new Gtk.ListBox () {
             activate_on_single_click = true,
             visible = true
@@ -44,7 +49,8 @@ public class Rollit.RollHistory : Gtk.Grid {
         var bottom_row = new Gtk.Box (HORIZONTAL, 12) {
             margin_top = margin_bottom = 6,
             margin_start = 6,
-            margin_end = 6
+            margin_end = 6,
+            valign = Gtk.Align.END
         };
         bottom_row.append (clear_text);
         bottom_row.append (clear_icon);
@@ -56,8 +62,8 @@ public class Rollit.RollHistory : Gtk.Grid {
         clear_button.add_css_class (Granite.STYLE_CLASS_FLAT);
         clear_button.child = bottom_row;
 
-        attach (scroll_box, 0, 0);
-        attach (clear_button, 0, 1);
+        append (scroll_box);
+        append (clear_button);
 
         clear_button.clicked.connect (() => {
             clear_rolls ();
