@@ -32,8 +32,9 @@ public class Rollit.NumDisplay : Gtk.Box {
         };
 
         hexpand = true;
+        halign = Gtk.Align.FILL;
         vexpand = true;
-        valign = Gtk.Align.CENTER;
+        valign = Gtk.Align.FILL;
 
         roll_result = new Gtk.Label (null);
         roll_result.add_css_class ("result-label");
@@ -48,6 +49,10 @@ public class Rollit.NumDisplay : Gtk.Box {
         stack.add_named (roll_result, "roll-result");
         stack.add_named (blank, "blank");
         stack.visible_child_name = "welcome";
+
+        stack.halign = Gtk.Align.FILL;
+        stack.valign = Gtk.Align.FILL;
+        stack.vexpand = true;
 
         append (stack);
     }

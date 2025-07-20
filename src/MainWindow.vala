@@ -85,7 +85,8 @@ public class Rollit.MainWindow : Gtk.Window {
 
 
         action_buttons = new Gtk.Box (Gtk.Orientation.HORIZONTAL,6) {
-            halign = Gtk.Align.CENTER
+            halign = Gtk.Align.CENTER,
+            valign = Gtk.Align.END
         };
 
         action_buttons.append (roll_button);
