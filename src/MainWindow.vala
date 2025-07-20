@@ -76,17 +76,15 @@ public class Rollit.MainWindow : Gtk.Window {
 
         menu_menu = new Rollit.Menu ();
         menu_button = new Gtk.MenuButton () {
-            popover = menu_menu
+            popover = menu_menu,
+            direction = Gtk.ArrowType.UP,
         };
         menu_button.set_primary (true);
+        menu_button.label = menu_menu.current_choice;
 
-        menu_menu.bind_property (
-            "label",
-            menu_button,
-            "label",
-            GLib.BindingFlags.DEFAULT
-        );
-
+        menu_menu.label_changed.connect (( new_label) => {
+            menu_button.label = new_label;
+        });
 
         action_buttons = new Gtk.Box (Gtk.Orientation.HORIZONTAL,6) {
             halign = Gtk.Align.CENTER,

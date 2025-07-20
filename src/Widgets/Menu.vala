@@ -19,7 +19,9 @@
 public class Rollit.Menu : Gtk.Popover {
 
     public signal void close_menu ();
-    public string label;
+
+    public string current_choice;
+    public signal void label_changed (string new_label);
 
     private SList<Gtk.CheckButton> dice_selection;
 
@@ -27,6 +29,7 @@ public class Rollit.Menu : Gtk.Popover {
     private Rollit.MenuItem six_sided;
     private Rollit.MenuItem eight_sided;
     private Rollit.MenuItem ten_sided;
+    private Rollit.MenuItem twelve_sided;
     private Rollit.MenuItem twenty_sided;
     private Rollit.MenuItem hundred_sided;
 
@@ -44,6 +47,7 @@ public class Rollit.Menu : Gtk.Popover {
         six_sided = new Rollit.MenuItem ("d6", "<Ctrl>1");
         eight_sided = new Rollit.MenuItem ("d8", "<Ctrl>2");
         ten_sided = new Rollit.MenuItem ("d10", "<Ctrl>2");
+        twelve_sided = new Rollit.MenuItem ("d12", "<Ctrl>2");
         twenty_sided = new Rollit.MenuItem ("d20", "<ctrl>3");
         hundred_sided = new Rollit.MenuItem ("d100", "<ctrl>3");
 
@@ -53,9 +57,11 @@ public class Rollit.Menu : Gtk.Popover {
             margin_bottom = 0
         };
 
+        presets.append (four_sided);
         presets.append (six_sided);
         presets.append (eight_sided);
         presets.append (ten_sided);
+        presets.append (twelve_sided);
         presets.append (twenty_sided);
         presets.append (hundred_sided);
 
@@ -69,9 +75,11 @@ public class Rollit.Menu : Gtk.Popover {
             custom_sided.set_group (check);
         }
 
+        four_sided.dice_radio.set_group (custom_sided);
         six_sided.dice_radio.set_group (custom_sided);
         eight_sided.dice_radio.set_group (custom_sided);
         ten_sided.dice_radio.set_group (custom_sided);
+        twelve_sided.dice_radio.set_group (custom_sided);
         twenty_sided.dice_radio.set_group (custom_sided);
         hundred_sided.dice_radio.set_group (custom_sided);
 
@@ -97,7 +105,10 @@ public class Rollit.Menu : Gtk.Popover {
 
         child = menu_box;
 
-        label = max_roll.to_string ();
+        // TRANSLATORS: %i represents a number: ex. d10 for a dice with 10 faces
+        // This will be displayed in a button with a menu to let people choose
+        current_choice = _("d%i").printf (max_roll);
+        label_changed (current_choice);
 
         tooltip_text = _("Dice settings");
         tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>D"}, tooltip_text);
@@ -112,6 +123,10 @@ public class Rollit.Menu : Gtk.Popover {
 
         ten_sided.clicked.connect ( () => {
             change_max (10, "d10");
+        });
+
+        twelve_sided.clicked.connect ( () => {
+            change_max (12, "d12");
         });
 
         twenty_sided.clicked.connect ( () => {
@@ -152,6 +167,10 @@ public class Rollit.Menu : Gtk.Popover {
                 ten_sided.dice_radio.active = true;
                 max_roll = 10;
                 break;
+            case "d12":
+                twelve_sided.dice_radio.active = true;
+                max_roll = 12;
+                break;
             case "d20":
                 twenty_sided.dice_radio.active = true;
                 max_roll = 20;
@@ -178,7 +197,10 @@ public class Rollit.Menu : Gtk.Popover {
             Application.settings.set_int ("custom-roll", roll);
             max_entry.sensitive = true;
         }
-        label = max_roll.to_string ();
+
+        current_choice = _("d%i").printf (max_roll);
+        label_changed (current_choice);
+
     }
 
     public void shortcut_pressed (int shortcut) {
