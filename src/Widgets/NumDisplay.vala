@@ -33,6 +33,7 @@ public class Rollit.NumDisplay : Gtk.Box {
 
         hexpand = true;
         vexpand = true;
+        valign = Gtk.Align.CENTER;
 
         roll_result = new Gtk.Label (null);
         roll_result.add_css_class ("result-label");
@@ -47,6 +48,8 @@ public class Rollit.NumDisplay : Gtk.Box {
         stack.add_named (roll_result, "roll-result");
         stack.add_named (blank, "blank");
         stack.visible_child_name = "welcome";
+
+        append (stack);
     }
 
     public int num_gen (int max_num) {
