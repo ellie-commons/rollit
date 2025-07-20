@@ -113,6 +113,10 @@ public class Rollit.Menu : Gtk.Popover {
         tooltip_text = _("Dice settings");
         tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>D"}, tooltip_text);
 
+        four_sided.clicked.connect ( () => {
+            change_max (4, "d4");
+        });
+
         six_sided.clicked.connect ( () => {
             change_max (6, "d6");
         });
@@ -155,6 +159,10 @@ public class Rollit.Menu : Gtk.Popover {
         var selection = Application.settings.get_string ("last-selected");
 
         switch (selection) {
+            case "d4":
+                six_sided.dice_radio.active = true;
+                max_roll = 4;
+                break;
             case "d6":
                 six_sided.dice_radio.active = true;
                 max_roll = 6;
