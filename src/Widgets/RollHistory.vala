@@ -74,7 +74,10 @@ public class Rollit.RollHistory : Gtk.Box {
     }
 
     private void clear_rolls () {
+        previous_rolls_box.remove_all ();
+
         foreach (PreviousRoll item in previous_rolls_list) {
+            previous_rolls_list.remove (item);
             item.destroy ();
         }
     }
