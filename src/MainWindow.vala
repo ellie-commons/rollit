@@ -70,7 +70,9 @@ public class Rollit.MainWindow : Gtk.Window {
 
         number_display = new Rollit.NumDisplay ();
 
-        roll_button = new Gtk.Button.with_label (_("Roll"));
+        roll_button = new Gtk.Button.with_label (_("Roll")) {
+            margin_start = margin_end = 12
+        };
         roll_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R"}, roll_button.label);
         roll_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
@@ -78,6 +80,7 @@ public class Rollit.MainWindow : Gtk.Window {
         menu_button = new Gtk.MenuButton () {
             popover = menu_menu,
             direction = Gtk.ArrowType.UP,
+            margin_start = margin_end = 12
         };
         menu_button.set_primary (true);
         menu_button.label = menu_menu.current_choice;
