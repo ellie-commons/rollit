@@ -23,9 +23,10 @@ The code is originally from @zelikos, who allowed us to update it for elementary
 
 ## 💝 Donations
 
-On the right you can donate to various contributors:
- - Akzel/Zelikos, the original author
- - teamcons, the main devs and maintainers behind this updated
+
+You can donate to various contributors:
+ - Akzel/Zelikos, the original author (https://ko-fi.com/akzel94)
+ - teamcons, the main devs and maintainers behind Cherrypick (https://ko-fi.com/teamcons)
 
 
 ## 🏗️ Building
