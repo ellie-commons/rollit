@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-21 20:30+0200\n"
+"POT-Creation-Date: 2025-07-21 22:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,34 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: src/Widgets/Menu.vala:35
+msgid "d4"
+msgstr ""
+
+#: src/Widgets/Menu.vala:36
+msgid "d6"
+msgstr ""
+
+#: src/Widgets/Menu.vala:37
+msgid "d8"
+msgstr ""
+
+#: src/Widgets/Menu.vala:38
+msgid "d10"
+msgstr ""
+
+#: src/Widgets/Menu.vala:39
+msgid "d12"
+msgstr ""
+
+#: src/Widgets/Menu.vala:40
+msgid "d20"
+msgstr ""
+
+#: src/Widgets/Menu.vala:41
+msgid "d100"
+msgstr ""
 
 #. TRANSLATORS: %i represents a number: ex. d10 for a dice with 10 faces
 #. This will be displayed in a button with a menu to let people choose
@@ -32,11 +60,11 @@ msgstr ""
 msgid "Ready to Roll"
 msgstr ""
 
-#: src/Widgets/RollHistory.vala:35
+#: src/Widgets/RollHistory.vala:34
 msgid "Clear"
 msgstr ""
 
-#: src/Widgets/RollHistory.vala:48
+#: src/Widgets/RollHistory.vala:47
 msgid "Clear history"
 msgstr ""
 
@@ -48,14 +76,18 @@ msgstr ""
 msgid "Copy result to clipboard"
 msgstr ""
 
-#: src/MainWindow.vala:27
+#: src/MainWindow.vala:44
 msgid "Roll-It"
 msgstr ""
 
-#: src/MainWindow.vala:50
+#: src/MainWindow.vala:66
 msgid "Roll history"
 msgstr ""
 
-#: src/MainWindow.vala:61
+#: src/MainWindow.vala:77
 msgid "Roll"
+msgstr ""
+
+#: src/MainWindow.vala:91
+msgid "Change dice"
 msgstr ""

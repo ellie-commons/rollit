@@ -1,21 +1,48 @@
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: fr\n"
-"Language-Team: none\n"
-"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2020-02-13 20:30+0100\n"
-"POT-Creation-Date: 2025-07-21 20:30+0200\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-21 22:26+0200\n"
+"PO-Revision-Date: 2020-02-13 20:30+0100\n"
+"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/Widgets/Menu.vala:35
+msgid "d4"
+msgstr ""
+
+#: src/Widgets/Menu.vala:36
+msgid "d6"
+msgstr ""
+
+#: src/Widgets/Menu.vala:37
+msgid "d8"
+msgstr ""
+
+#: src/Widgets/Menu.vala:38
+msgid "d10"
+msgstr ""
+
+#: src/Widgets/Menu.vala:39
+msgid "d12"
+msgstr ""
+
+#: src/Widgets/Menu.vala:40
+msgid "d20"
+msgstr ""
+
+#: src/Widgets/Menu.vala:41
+msgid "d100"
+msgstr ""
 
 #. TRANSLATORS: %i represents a number: ex. d10 for a dice with 10 faces
 #. This will be displayed in a button with a menu to let people choose
-#: src/Widgets/Menu.vala:99
-#: src/Widgets/Menu.vala:198
+#: src/Widgets/Menu.vala:99 src/Widgets/Menu.vala:198
 #, c-format
 msgid "d%i"
 msgstr "d%i"
@@ -29,11 +56,11 @@ msgstr "Paramètres"
 msgid "Ready to Roll"
 msgstr "Prêt à lancer le dé"
 
-#: src/Widgets/RollHistory.vala:35
+#: src/Widgets/RollHistory.vala:34
 msgid "Clear"
 msgstr "Clair"
 
-#: src/Widgets/RollHistory.vala:48
+#: src/Widgets/RollHistory.vala:47
 msgid "Clear history"
 msgstr "Effacer l'historique"
 
@@ -45,18 +72,22 @@ msgstr "Copié"
 msgid "Copy result to clipboard"
 msgstr "Copier le résultat dans le presse-papiers"
 
-#: src/MainWindow.vala:27
+#: src/MainWindow.vala:44
 #, fuzzy
 msgid "Roll-It"
 msgstr "Lancer le dé"
 
-#: src/MainWindow.vala:50
+#: src/MainWindow.vala:66
 msgid "Roll history"
 msgstr "Historique des rouleaux"
 
-#: src/MainWindow.vala:61
+#: src/MainWindow.vala:77
 msgid "Roll"
 msgstr "Lancer le dé"
+
+#: src/MainWindow.vala:91
+msgid "Change dice"
+msgstr ""
 
 #~ msgid "Light"
 #~ msgstr "Thème clair"

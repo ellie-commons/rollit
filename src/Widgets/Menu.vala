@@ -32,13 +32,13 @@ public class Rollit.Menu : Gtk.Popover {
     construct {
         dice_selection = new SList<Gtk.CheckButton> ();
 
-        four_sided = new Rollit.MenuItem ("d4", "<Ctrl>1");
-        six_sided = new Rollit.MenuItem ("d6", "<Ctrl>2");
-        eight_sided = new Rollit.MenuItem ("d8", "<Ctrl>3");
-        ten_sided = new Rollit.MenuItem ("d10", "<Ctrl>4");
-        twelve_sided = new Rollit.MenuItem ("d12", "<Ctrl>5");
-        twenty_sided = new Rollit.MenuItem ("d20", "<ctrl>6");
-        hundred_sided = new Rollit.MenuItem ("d100", "<ctrl>7");
+        four_sided = new Rollit.MenuItem (_("d4"), "<Ctrl>1");
+        six_sided = new Rollit.MenuItem (_("d6"), "<Ctrl>2");
+        eight_sided = new Rollit.MenuItem (_("d8"), "<Ctrl>3");
+        ten_sided = new Rollit.MenuItem (_("d10"), "<Ctrl>4");
+        twelve_sided = new Rollit.MenuItem (_("d12"), "<Ctrl>5");
+        twenty_sided = new Rollit.MenuItem (_("d20"), "<ctrl>6");
+        hundred_sided = new Rollit.MenuItem (_("d100"), "<ctrl>7");
 
         var presets = new Gtk.Box (VERTICAL, 6) {
             margin_top = 6,

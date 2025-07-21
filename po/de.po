@@ -1,24 +1,51 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: \n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"POT-Creation-Date: 2025-07-21 20:30+0200\n"
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-21 22:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Widgets/Menu.vala:35
+msgid "d4"
+msgstr "w4"
+
+#: src/Widgets/Menu.vala:36
+msgid "d6"
+msgstr "w6"
+
+#: src/Widgets/Menu.vala:37
+msgid "d8"
+msgstr "w8"
+
+#: src/Widgets/Menu.vala:38
+msgid "d10"
+msgstr "w10"
+
+#: src/Widgets/Menu.vala:39
+msgid "d12"
+msgstr "w12"
+
+#: src/Widgets/Menu.vala:40
+msgid "d20"
+msgstr "w20"
+
+#: src/Widgets/Menu.vala:41
+msgid "d100"
+msgstr "w100"
 
 #. TRANSLATORS: %i represents a number: ex. d10 for a dice with 10 faces
 #. This will be displayed in a button with a menu to let people choose
-#: src/Widgets/Menu.vala:99
-#: src/Widgets/Menu.vala:198
+#: src/Widgets/Menu.vala:99 src/Widgets/Menu.vala:198
 #, c-format
 msgid "d%i"
-msgstr "d%i"
+msgstr "w%i"
 
 #: src/Widgets/Menu.vala:102
 msgid "Dice settings"
@@ -28,11 +55,11 @@ msgstr "Würfel-Einstellungen"
 msgid "Ready to Roll"
 msgstr "Bereit zum Würfeln"
 
-#: src/Widgets/RollHistory.vala:35
+#: src/Widgets/RollHistory.vala:34
 msgid "Clear"
 msgstr "Löschen"
 
-#: src/Widgets/RollHistory.vala:48
+#: src/Widgets/RollHistory.vala:47
 msgid "Clear history"
 msgstr "Verlauf löschen"
 
@@ -44,14 +71,18 @@ msgstr "Kopiert"
 msgid "Copy result to clipboard"
 msgstr "Ergebnis in die Zwischenablage kopieren"
 
-#: src/MainWindow.vala:27
+#: src/MainWindow.vala:44
 msgid "Roll-It"
 msgstr "Roll-It"
 
-#: src/MainWindow.vala:50
+#: src/MainWindow.vala:66
 msgid "Roll history"
 msgstr "Würfelverlauf"
 
-#: src/MainWindow.vala:61
+#: src/MainWindow.vala:77
 msgid "Roll"
 msgstr "Würfeln"
+
+#: src/MainWindow.vala:91
+msgid "Change dice"
+msgstr ""
