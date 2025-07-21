@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2020-2021 Patrick Csikos <zelikos@pm.me> -->
-<component type="desktop">
+<component type="desktop-application">
   <id>io.github.ellie_commons.rollit</id>
   <launchable type="desktop-id">io.github.ellie_commons.rollit.desktop</launchable>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Roll-It</name>
-  <summary>Roll the dice</summary>
+  <summary>Simply roll a dice</summary>
   <description>
     <p>Simulate the results of rolling a die.</p>
 
-    <p>Quickly switch between a six-sided, ten-sided, or twenty-sided die, or roll a custom die with up to one-hundred sides.</p>
+    <p>Quickly switch between several common die such as d6 or d20, or choose your own number of faces to roll against</p>
 
     <p>Keyboard shortcuts:</p>
     <ul>
       <li>Roll the dice with Ctrl+R</li>
       <li>Bring up the dice menu with Ctrl+D</li>
-      <li>Use Ctrl+1, 2, or 3 to select the first, second, or third dice option</li>
-      <li>Hit Ctrl+4 to select the custom die option and focus the number entry when the menu is visible</li>
+      <li>Use Ctrl + Number to select one of the preset option</li>
+      <li>Hit Ctrl+0 to select the custom die option and focus the number entry when the menu is visible</li>
       <li>Toggle the roll history pane with Ctrl+H</li>
       <li>Clear roll history with Ctrl+L</li>
     </ul>
+    <p>This is an update of an older codebase of Chance, which is no longer directed toward elementary OS. Feel free to check it out on flathub!</p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/screenshot1.png</image>
+      <caption>The main window of Roll-It. Roll dices and check history</caption>
+      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/window-light.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/screenshot2.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/screenshot3.png</image>
+      <caption>Roll-It with dark theme enabled</caption>
+      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/window-dark.png</image>
     </screenshot>
   </screenshots>
     <content_rating type="oars-1.1"/>
@@ -52,10 +52,26 @@
     <url type="donation">https://ko-fi.com/teamcons</url>
 
     <suggests>
-        <id>io.github.ellie_commons.jorts</id>
+        <id>dev.zelikos.rollit</id>
         <id>com.github.elfenware.badger</id>
         <id>io.github.ellie_commons.reminduck</id>
     </suggests>
+
+    <keywords>
+        <keyword>Die</keyword>
+        <keyword>Dice</keyword>
+        <keyword>Roll</keyword>
+        <keyword>Random</keyword>
+        <keyword>Number</keyword>
+        <keyword>Rnd</keyword>
+        <keyword>Num</keyword>
+        <keyword>elementary OS</keyword>
+    </keywords>
+
+    <branding>
+      <color type="primary" scheme_preference="light">#a56de2</color>
+      <color type="primary" scheme_preference="dark">##634187</color>
+    </branding>
 
   <releases>
     <release version="3.0.0" date="2025-07-24">
@@ -63,6 +79,7 @@
         <p>3.0.0 Revival</p>
         <ul>
           <li>Updated to GTK4 with the permission of its original author @zelikos</li>
+          <li>More dice options</li>
         </ul>
       </description>
     </release>
@@ -139,14 +156,4 @@
       </description>
     </release>
   </releases>
-
-  <url type="homepage">https://github.com/zelikos/rollit</url>
-  <url type="bugtracker">https://github.com/zelikos/rollit/issues</url>
-  <url type="donation">https://liberapay.com/zelikos/</url>
-  <custom>
-    <value key="x-appcenter-color-primary">#a56de2</value>
-    <value key="x-appcenter-color-primary-text">#fff</value>
-    <value key="x-appcenter-suggested-price">3</value>
-    <value key="x-appcenter-stripe">pk_live_xYarH6rPB7LZ5NYGw5lZYTPC00rGge5P4K</value>
-  </custom>
 </component>
