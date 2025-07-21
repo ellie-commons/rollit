@@ -26,11 +26,11 @@
   <screenshots>
     <screenshot type="default">
       <caption>The main window of Roll-It. Roll dices and check history</caption>
-      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/window-light.png</image>
+      <image>https://raw.githubusercontent.com/ellie-commons/rollit/main/data/screenshots/window-light.png</image>
     </screenshot>
     <screenshot>
       <caption>Roll-It with dark theme enabled</caption>
-      <image>https://raw.githubusercontent.com/zelikos/rollit/main/data/screenshots/window-dark.png</image>
+      <image>https://raw.githubusercontent.com/ellie-commons/rollit/main/data/screenshots/window-dark.png</image>
     </screenshot>
   </screenshots>
     <content_rating type="oars-1.1"/>
