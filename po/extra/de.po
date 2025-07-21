@@ -19,7 +19,7 @@ msgstr "Roll-It"
 
 #: data/rollit.metainfo.xml.in:9
 msgid "Simply roll a dice"
-msgstr "Würfeln Sie einfach"
+msgstr "Einfach würfeln"
 
 #: data/rollit.metainfo.xml.in:11
 msgid "Simulate the results of rolling a die."
@@ -35,11 +35,11 @@ msgstr "Tastaturkurzbefehle:"
 
 #: data/rollit.metainfo.xml.in:17
 msgid "Roll the dice with Ctrl+R"
-msgstr "Würfeln Sie mit Strg+R"
+msgstr "Würfeln mit Strg+R"
 
 #: data/rollit.metainfo.xml.in:18
 msgid "Bring up the dice menu with Ctrl+D"
-msgstr "Rufen Sie das Würfelmenü mit Strg+D auf"
+msgstr "Würfelmenü rufen mit Strg+D auf"
 
 #: data/rollit.metainfo.xml.in:19
 msgid "Use Ctrl + Number to select one of the preset option"

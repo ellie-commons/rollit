@@ -26,11 +26,11 @@ msgstr "Würfel-Einstellungen"
 
 #: src/Widgets/NumDisplay.vala:32
 msgid "Ready to Roll"
-msgstr "Bereit zum Aufbruch"
+msgstr "Bereit zum Würfeln"
 
 #: src/Widgets/RollHistory.vala:35
 msgid "Clear"
-msgstr "Klar"
+msgstr "Löschen"
 
 #: src/Widgets/RollHistory.vala:48
 msgid "Clear history"
@@ -50,8 +50,8 @@ msgstr "Roll-It"
 
 #: src/MainWindow.vala:50
 msgid "Roll history"
-msgstr "Geschichte der Rolle"
+msgstr "Würfelverlauf"
 
 #: src/MainWindow.vala:61
 msgid "Roll"
-msgstr "Rolle"
+msgstr "Würfeln"
