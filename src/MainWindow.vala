@@ -19,7 +19,6 @@ public class Rollit.MainWindow : Gtk.Window {
     private Gtk.Paned hp;
 
     private bool history_visible;
-    private uint configure_id;
 
 
     public MainWindow (Rollit.Application app) {
