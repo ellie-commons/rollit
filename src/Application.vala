@@ -35,6 +35,12 @@ public class Rollit.Application : Gtk.Application {
     }
 
     construct {
+
+        Intl.setlocale (LocaleCategory.ALL, "");
+        Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (GETTEXT_PACKAGE);
+
         var quit_action = new SimpleAction ("quit", null);
         add_action (quit_action);
         set_accels_for_action ("app.quit", {"<Control>q"});
