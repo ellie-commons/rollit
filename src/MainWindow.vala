@@ -25,12 +25,14 @@ public class Rollit.MainWindow : Gtk.Window {
     public const string ACTION_PREFIX = "app.";
     public const string ACTION_ROLL = "roll";
     public const string ACTION_CLEAR_HISTORY = "clear_hist";
+    public const string ACTION_MENU = "menu";
 
     public static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
 
     private const GLib.ActionEntry[] ACTION_ENTRIES = {
         { ACTION_ROLL, on_roll },
-        { ACTION_CLEAR_HISTORY, on_clear_history}
+        { ACTION_CLEAR_HISTORY, on_clear_history},
+        { ACTION_MENU, on_menu}
     };
 
 
@@ -86,6 +88,7 @@ public class Rollit.MainWindow : Gtk.Window {
         };
         menu_button.set_primary (true);
         menu_button.label = menu_menu.current_choice;
+        menu_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>D"}, _("Change dice"));
 
         menu_menu.label_changed.connect (( new_label) => {
             menu_button.label = new_label;
@@ -239,6 +242,10 @@ public class Rollit.MainWindow : Gtk.Window {
 
     private void on_clear_history () {
         roll_history.clear_rolls ();
+    }
+
+    private void on_menu () {
+        menu_button.activate ();
     }
 
 }

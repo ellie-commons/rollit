@@ -63,6 +63,10 @@ public class Rollit.Application : Gtk.Application {
         add_action (clearhist_action);
         set_accels_for_action ("app.clear_hist", {"<Control>l"});
 
+        var menu_action = new SimpleAction ("menu", null);
+        add_action (clearhist_action);
+        set_accels_for_action ("app.menu", {"<Control>d"});
+
     }
 
     protected override void activate () {
