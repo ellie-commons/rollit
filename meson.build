@@ -20,7 +20,7 @@ asresources = gnome.compile_resources(
 )
 
 dependencies = [
-    dependency('gtk4'),
+    dependency('gtk4', version: '>= 4.12'),
     dependency('granite-7')
 ]
 
