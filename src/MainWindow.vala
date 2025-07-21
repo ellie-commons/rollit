@@ -59,7 +59,7 @@ public class Rollit.MainWindow : Gtk.Window {
         number_display = new Rollit.NumDisplay ();
 
         roll_button = new Gtk.Button.with_label (_("Roll")) {
-            width_request = 48
+            width_request = 96
         };
         roll_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R"}, roll_button.label);
         roll_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
@@ -68,7 +68,7 @@ public class Rollit.MainWindow : Gtk.Window {
         menu_button = new Gtk.MenuButton () {
             popover = menu_menu,
             direction = Gtk.ArrowType.UP,
-            width_request = 48
+            width_request = 96
         };
         menu_button.set_primary (true);
         menu_button.label = menu_menu.current_choice;
