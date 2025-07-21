@@ -1,42 +1,47 @@
-<p align="center">
-  <img src="data/icons/128.svg" alt="Icon" />
-</p>
-<h1 align="center">Roll-It</h1>
-<p align="center">
-  <a href="https://appcenter.elementary.io/io.github.ellie_commons.rollit"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
-</p>
 
-| ![Screenshot](data/screenshots/screenshot1.png) | ![Screenshot](data/screenshots/screenshot2.png) |
-|------------------------------------------|-----------------------------------------|
+<div align="center">
+  <img alt="An icon representing a six-sided dice, showing a three" src="data/icons/128.svg" />
+  <h1>Roll-It</h1>
+  <h3>Simply roll a dice</h3>
+</div>
 
-## Roll the dice
-
-Simulate the results of rolling a die. Roll a six-sided die by default, or get the results of rolling a custom die with up to one-hundred sides.
+<span align="center"> <img class="center" src="https://github.com/ellie-commons/rollit/blob/main/data/screenshots/screenshot1.png" alt="A screenshot of a window displaying a dice result and a history of past rolls"></span>
+</div>
 
 ## Installation
 
 Roll-It is designed and developed primarily for [elementary OS]. The latest stable release is available via AppCenter.
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)][AppCenter link]
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg?new)](https://appcenter.elementary.io/io.github.ellie_commons.rollit) 
 
-Any version distributed elsewhere is not provided nor supported by me.
 
-## Building
+It is the updated, older codebase of Chance, which once was an elementary OS, but is now on Flathub and for GNOME systems:
 
-### Flatpak
+The code is originally from @zelikos, who allowed us to update it for elementary OS
+
+[<img src="https://flathub.org/assets/badges/flathub-badge-en.svg" width="160" alt="Download on Flathub">](https://flathub.org/apps/dev.zelikos.rollit)
+
+## 💝 Donations
+
+On the right you can donate to various contributors:
+ - Akzel/Zelikos, the original author
+ - teamcons, the main devs and maintainers behind this updated
+
+
+## 🏗️ Building
+
+Installation is as simple as installing the above, downloading and extracting the zip archive, changing to the new repo's directory,
+and run the following command:
+
+### On elementary OS or with its appcenter remote installed
+
+```bash
+flatpak-builder --force-clean --user --install-deps-from=appcenter --install builddir ./io.github.ellie_commons.rollit.yml
+```
+
+### On other systems:
 
 First, install the elementary Flatpak runtime & SDK:
 
-```shell
 flatpak remote-add --if-not-exists appcenter https://flatpak.elementary.io/repo.flatpakrepo
-flatpak install appcenter io.elementary.Platform//6.1 io.elementary.Sdk//6.1
-```
-
-Then, to build and install Roll-It:
-
-```shell
-flatpak-builder build io.github.ellie_commons.rollit.yml --user --install --force-clean
-```
-
-[elementary OS]: https://elementary.io
-[AppCenter link]: https://appcenter.elementary.io/io.github.ellie_commons.rollit
+flatpak install appcenter io.elementary.Platform//8.2 io.elementary.Sdk//8.2
