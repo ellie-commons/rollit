@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-21 22:26+0200\n"
+"POT-Creation-Date: 2025-07-21 23:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,46 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Widgets/Menu.vala:35
+#: src/Widgets/Menu.vala:29
 msgid "d4"
 msgstr ""
 
-#: src/Widgets/Menu.vala:36
+#: src/Widgets/Menu.vala:30
 msgid "d6"
 msgstr ""
 
-#: src/Widgets/Menu.vala:37
+#: src/Widgets/Menu.vala:31
 msgid "d8"
 msgstr ""
 
-#: src/Widgets/Menu.vala:38
+#: src/Widgets/Menu.vala:32
 msgid "d10"
 msgstr ""
 
-#: src/Widgets/Menu.vala:39
+#: src/Widgets/Menu.vala:33
 msgid "d12"
 msgstr ""
 
-#: src/Widgets/Menu.vala:40
+#: src/Widgets/Menu.vala:34
 msgid "d20"
 msgstr ""
 
-#: src/Widgets/Menu.vala:41
+#: src/Widgets/Menu.vala:35
 msgid "d100"
+msgstr ""
+
+#: src/Widgets/Menu.vala:68
+msgid "Press 0 to immediately choose the custom dice"
 msgstr ""
 
 #. TRANSLATORS: %i represents a number: ex. d10 for a dice with 10 faces
 #. This will be displayed in a button with a menu to let people choose
-#: src/Widgets/Menu.vala:99 src/Widgets/Menu.vala:198
+#: src/Widgets/Menu.vala:88 src/Widgets/Menu.vala:187
 #, c-format
 msgid "d%i"
 msgstr ""
 
-#: src/Widgets/Menu.vala:102
+#: src/Widgets/Menu.vala:91
 msgid "Dice settings"
 msgstr ""
 
@@ -76,18 +80,24 @@ msgstr ""
 msgid "Copy result to clipboard"
 msgstr ""
 
-#: src/MainWindow.vala:44
+#. /TRANSLATORS: %s is here replaced with a number
+#: src/Widgets/Buttons/MenuItem.vala:28
+#, c-format
+msgid "Press %s to immediately select this dice"
+msgstr ""
+
+#: src/MainWindow.vala:59
 msgid "Roll-It"
 msgstr ""
 
-#: src/MainWindow.vala:66
+#: src/MainWindow.vala:81
 msgid "Roll history"
 msgstr ""
 
-#: src/MainWindow.vala:77
+#: src/MainWindow.vala:90
 msgid "Roll"
 msgstr ""
 
-#: src/MainWindow.vala:91
+#: src/MainWindow.vala:104
 msgid "Change dice"
 msgstr ""
