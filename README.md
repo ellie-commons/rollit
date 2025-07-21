@@ -43,5 +43,9 @@ flatpak-builder --force-clean --user --install-deps-from=appcenter --install bui
 
 First, install the elementary Flatpak runtime & SDK:
 
+```bash
 flatpak remote-add --if-not-exists appcenter https://flatpak.elementary.io/repo.flatpakrepo
 flatpak install appcenter io.elementary.Platform//8.2 io.elementary.Sdk//8.2
+```
+
+Then follow the elementary OS instructions
