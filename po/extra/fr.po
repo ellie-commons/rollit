@@ -1,19 +1,18 @@
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: fr\n"
-"Language-Team: none\n"
-"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2020-02-13 20:30+0100\n"
-"POT-Creation-Date: 2025-07-21 20:30+0200\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-21 23:40+0200\n"
+"PO-Revision-Date: 2020-02-13 20:30+0100\n"
+"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: data/rollit.metainfo.xml.in:8
-#: data/rollit.desktop.in:3
+#: data/rollit.metainfo.xml.in:8 data/rollit.desktop.in:3
 msgid "Roll-It"
 msgstr "Roll-It"
 
@@ -26,8 +25,12 @@ msgid "Simulate the results of rolling a die."
 msgstr "Simulez le résultat d'un lancer de dé."
 
 #: data/rollit.metainfo.xml.in:13
-msgid "Quickly switch between several common die such as d6 or d20, or choose your own number of faces to roll against"
-msgstr "Passez rapidement d'un dé à l'autre, comme d6 ou d20, ou choisissez votre propre nombre de faces à lancer."
+msgid ""
+"Quickly switch between several common die such as d6 or d20, or choose your "
+"own number of faces to roll against"
+msgstr ""
+"Passez rapidement d'un dé à l'autre, comme d6 ou d20, ou choisissez votre "
+"propre nombre de faces à lancer."
 
 #: data/rollit.metainfo.xml.in:15
 msgid "Keyboard shortcuts:"
@@ -44,11 +47,16 @@ msgstr "Faites apparaître le menu des dés avec Ctrl+D"
 
 #: data/rollit.metainfo.xml.in:19
 msgid "Use Ctrl + Number to select one of the preset option"
-msgstr "Utilisez Ctrl + Numéro pour sélectionner l'une des options prédéfinies."
+msgstr ""
+"Utilisez Ctrl + Numéro pour sélectionner l'une des options prédéfinies."
 
 #: data/rollit.metainfo.xml.in:20
-msgid "Hit Ctrl+0 to select the custom die option and focus the number entry when the menu is visible"
-msgstr "Appuyez sur Ctrl+0 pour sélectionner l'option de matrice personnalisée et mettre l'accent sur l'entrée numérique lorsque le menu est visible."
+msgid ""
+"Hit Ctrl+0 to select the custom die option and focus the number entry when "
+"the menu is visible"
+msgstr ""
+"Appuyez sur Ctrl+0 pour sélectionner l'option de matrice personnalisée et "
+"mettre l'accent sur l'entrée numérique lorsque le menu est visible."
 
 #: data/rollit.metainfo.xml.in:21
 msgid "Toggle the roll history pane with Ctrl+H"
@@ -59,12 +67,17 @@ msgid "Clear roll history with Ctrl+L"
 msgstr "Effacer l'historique des rouleaux avec Ctrl+L"
 
 #: data/rollit.metainfo.xml.in:24
-msgid "This is an update of an older codebase of Chance, which is no longer directed toward elementary OS. Feel free to check it out on flathub!"
-msgstr "Il s'agit d'une mise à jour d'une ancienne base de code de Chance, qui n'est plus destinée à elementary OS. N'hésitez pas à le consulter sur flathub !"
+msgid ""
+"This is an update of an older codebase of Chance, which is no longer "
+"directed toward elementary OS. Feel free to check it out on flathub!"
+msgstr ""
+"Il s'agit d'une mise à jour d'une ancienne base de code de Chance, qui n'est "
+"plus destinée à elementary OS. N'hésitez pas à le consulter sur flathub !"
 
 #: data/rollit.metainfo.xml.in:28
 msgid "The main window of Roll-It. Roll dices and check history"
-msgstr "La fenêtre principale de Roll-It. Lancer les dés et vérifier l'historique"
+msgstr ""
+"La fenêtre principale de Roll-It. Lancer les dés et vérifier l'historique"
 
 #: data/rollit.metainfo.xml.in:32
 msgid "Roll-It with dark theme enabled"
@@ -113,115 +126,135 @@ msgstr "3.0.0 Revival"
 
 #: data/rollit.metainfo.xml.in:81
 msgid "Updated to GTK4 with the permission of its original author @zelikos"
-msgstr "Mis à jour pour GTK4 avec la permission de son auteur original @zelikos"
+msgstr ""
+"Mis à jour pour GTK4 avec la permission de son auteur original @zelikos"
 
 #: data/rollit.metainfo.xml.in:82
-msgid "More dice options"
-msgstr "Plus d'options de dés"
+msgid "More dice options, because i need dices when GMing"
+msgstr ""
 
-#: data/rollit.metainfo.xml.in:88
+#: data/rollit.metainfo.xml.in:83
+msgid "More accessible accels for the GMs"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:84
+msgid "Now in german"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:90
 msgid "Backend Updates"
 msgstr "Mises à jour du backend"
 
-#: data/rollit.metainfo.xml.in:90
+#: data/rollit.metainfo.xml.in:92
 msgid "Updated category information for better discoverability"
-msgstr "Mise à jour des informations sur les catégories pour une meilleure découverte"
+msgstr ""
+"Mise à jour des informations sur les catégories pour une meilleure découverte"
 
-#: data/rollit.metainfo.xml.in:91
+#: data/rollit.metainfo.xml.in:93
 msgid "Stricter sandboxing"
 msgstr "Un bac à sable plus strict"
 
-#: data/rollit.metainfo.xml.in:92
+#: data/rollit.metainfo.xml.in:94
 msgid "Bump platform to 6.1"
 msgstr "Passage à la plate-forme 6.1"
 
-#: data/rollit.metainfo.xml.in:98
+#: data/rollit.metainfo.xml.in:100
 msgid "elementary OS 6 Update!"
 msgstr "Mise à jour du système d'exploitation élémentaire 6 !"
 
-#: data/rollit.metainfo.xml.in:100
+#: data/rollit.metainfo.xml.in:102
 msgid "Respects new dark style preference"
 msgstr "Respecte les nouvelles préférences en matière de style sombre"
 
-#: data/rollit.metainfo.xml.in:101
+#: data/rollit.metainfo.xml.in:103
 msgid "Headerbar and 'Roll' button follow the system accent color"
-msgstr "La barre d'en-tête et le bouton \"Roll\" suivent la couleur d'accentuation du système."
+msgstr ""
+"La barre d'en-tête et le bouton \"Roll\" suivent la couleur d'accentuation "
+"du système."
 
-#: data/rollit.metainfo.xml.in:102
+#: data/rollit.metainfo.xml.in:104
 msgid "Dice menu now features keyboard shortcut labels"
 msgstr "Le menu des dés comporte désormais des libellés de raccourcis clavier"
 
-#: data/rollit.metainfo.xml.in:103
+#: data/rollit.metainfo.xml.in:105
 msgid "Various refinements to the UI and the backend"
 msgstr "Diverses améliorations de l'interface utilisateur et du backend"
 
-#: data/rollit.metainfo.xml.in:109
+#: data/rollit.metainfo.xml.in:111
 msgid "History and Keyboard Shortcuts"
 msgstr "Historique et raccourcis clavier"
 
-#: data/rollit.metainfo.xml.in:111
+#: data/rollit.metainfo.xml.in:113
 msgid "Previous rolls are now stored in a new roll history pane"
-msgstr "Les rouleaux précédents sont désormais stockés dans un nouveau volet d'historique des rouleaux."
+msgstr ""
+"Les rouleaux précédents sont désormais stockés dans un nouveau volet "
+"d'historique des rouleaux."
 
-#: data/rollit.metainfo.xml.in:112
+#: data/rollit.metainfo.xml.in:114
 msgid "Many keyboard shortcuts have been added"
 msgstr "De nombreux raccourcis clavier ont été ajoutés"
 
-#: data/rollit.metainfo.xml.in:113
-msgid "Custom die value is now saved regardless of the last-selected die option"
-msgstr "La valeur du dé personnalisé est désormais sauvegardée quelle que soit la dernière option de dé sélectionnée."
+#: data/rollit.metainfo.xml.in:115
+msgid ""
+"Custom die value is now saved regardless of the last-selected die option"
+msgstr ""
+"La valeur du dé personnalisé est désormais sauvegardée quelle que soit la "
+"dernière option de dé sélectionnée."
 
-#: data/rollit.metainfo.xml.in:114
+#: data/rollit.metainfo.xml.in:116
 msgid "More code cleanups and refactoring on the backend"
 msgstr "Plus de nettoyages de code et de refactoring sur le backend"
 
-#: data/rollit.metainfo.xml.in:120
+#: data/rollit.metainfo.xml.in:122
 msgid "Visual Tweaks and Backend Stuff"
 msgstr "Ajustements visuels et trucs de backend"
 
-#: data/rollit.metainfo.xml.in:122
+#: data/rollit.metainfo.xml.in:124
 msgid "Fixed spacing of the combo-button and number display"
-msgstr "Correction de l'espacement des boutons combinés et de l'affichage des nombres"
+msgstr ""
+"Correction de l'espacement des boutons combinés et de l'affichage des nombres"
 
-#: data/rollit.metainfo.xml.in:123
+#: data/rollit.metainfo.xml.in:125
 msgid "Header styling adjusted"
 msgstr "Ajustement du style de l'en-tête"
 
-#: data/rollit.metainfo.xml.in:124
+#: data/rollit.metainfo.xml.in:126
 msgid "Prep for elementary OS 6 support"
 msgstr "Préparer la prise en charge du système d'exploitation élémentaire OS 6"
 
-#: data/rollit.metainfo.xml.in:125
+#: data/rollit.metainfo.xml.in:127
 msgid "Code cleanups"
 msgstr "Nettoyage du code"
 
-#: data/rollit.metainfo.xml.in:131
+#: data/rollit.metainfo.xml.in:133
 msgid "Implemented dice presets"
 msgstr "Mise en place de préréglages pour les dés"
 
-#: data/rollit.metainfo.xml.in:136
+#: data/rollit.metainfo.xml.in:138
 msgid "Remembers previously-selected number for highest possible roll"
-msgstr "Se souvient du nombre précédemment sélectionné pour obtenir le meilleur résultat possible."
+msgstr ""
+"Se souvient du nombre précédemment sélectionné pour obtenir le meilleur "
+"résultat possible."
 
-#: data/rollit.metainfo.xml.in:142
+#: data/rollit.metainfo.xml.in:144
 #, fuzzy
 msgid "Added release info to AppData"
 msgstr "Ajout des informations de version aux métadonnées"
 
-#: data/rollit.metainfo.xml.in:143
+#: data/rollit.metainfo.xml.in:145
 #, fuzzy
 msgid "Rewrote app description to be more concise"
 msgstr "Réecriture de la description de l'application"
 
-#: data/rollit.metainfo.xml.in:144
+#: data/rollit.metainfo.xml.in:146
 msgid "French translations by @NathanBnm"
 msgstr "Traductions en français par @NathanBnm"
 
-#: data/rollit.metainfo.xml.in:150
+#: data/rollit.metainfo.xml.in:152
 msgid "AppData fixes"
 msgstr "Correction des métadonnées"
 
-#: data/rollit.metainfo.xml.in:155
+#: data/rollit.metainfo.xml.in:157
 msgid "Initial release"
 msgstr "Version initiale"
 
@@ -237,8 +270,15 @@ msgstr "Lancez le dé"
 msgid "Die;Dice;Roll;Random;Number;Rnd;Num;"
 msgstr "Dé;Lancer;Aléatoire;Nombre;Rnd;Num;"
 
-#~ msgid "Roll a six-sided die by default, or get the results of a custom die size of up to one-hundred sides."
-#~ msgstr "Lancez un dé à six faces par défaut, ou bien obtenez le résultat souhaité avec un nombre de faces personnalisé allant jusqu'à cent."
+#~ msgid "More dice options"
+#~ msgstr "Plus d'options de dés"
+
+#~ msgid ""
+#~ "Roll a six-sided die by default, or get the results of a custom die size "
+#~ "of up to one-hundred sides."
+#~ msgstr ""
+#~ "Lancez un dé à six faces par défaut, ou bien obtenez le résultat souhaité "
+#~ "avec un nombre de faces personnalisé allant jusqu'à cent."
 
 #~ msgid "Patrick Csikos"
 #~ msgstr "Patrick Csikos"

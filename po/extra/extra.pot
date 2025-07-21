@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-21 20:30+0200\n"
+"POT-Creation-Date: 2025-07-21 23:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,111 +124,119 @@ msgid "Updated to GTK4 with the permission of its original author @zelikos"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:82
-msgid "More dice options"
+msgid "More dice options, because i need dices when GMing"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:88
-msgid "Backend Updates"
+#: data/rollit.metainfo.xml.in:83
+msgid "More accessible accels for the GMs"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:84
+msgid "Now in german"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:90
-msgid "Updated category information for better discoverability"
-msgstr ""
-
-#: data/rollit.metainfo.xml.in:91
-msgid "Stricter sandboxing"
+msgid "Backend Updates"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:92
+msgid "Updated category information for better discoverability"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:93
+msgid "Stricter sandboxing"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:94
 msgid "Bump platform to 6.1"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:98
+#: data/rollit.metainfo.xml.in:100
 msgid "elementary OS 6 Update!"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:100
+#: data/rollit.metainfo.xml.in:102
 msgid "Respects new dark style preference"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:101
+#: data/rollit.metainfo.xml.in:103
 msgid "Headerbar and 'Roll' button follow the system accent color"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:102
+#: data/rollit.metainfo.xml.in:104
 msgid "Dice menu now features keyboard shortcut labels"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:103
+#: data/rollit.metainfo.xml.in:105
 msgid "Various refinements to the UI and the backend"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:109
+#: data/rollit.metainfo.xml.in:111
 msgid "History and Keyboard Shortcuts"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:111
+#: data/rollit.metainfo.xml.in:113
 msgid "Previous rolls are now stored in a new roll history pane"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:112
+#: data/rollit.metainfo.xml.in:114
 msgid "Many keyboard shortcuts have been added"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:113
+#: data/rollit.metainfo.xml.in:115
 msgid ""
 "Custom die value is now saved regardless of the last-selected die option"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:114
+#: data/rollit.metainfo.xml.in:116
 msgid "More code cleanups and refactoring on the backend"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:120
+#: data/rollit.metainfo.xml.in:122
 msgid "Visual Tweaks and Backend Stuff"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:122
+#: data/rollit.metainfo.xml.in:124
 msgid "Fixed spacing of the combo-button and number display"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:123
+#: data/rollit.metainfo.xml.in:125
 msgid "Header styling adjusted"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:124
+#: data/rollit.metainfo.xml.in:126
 msgid "Prep for elementary OS 6 support"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:125
+#: data/rollit.metainfo.xml.in:127
 msgid "Code cleanups"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:131
+#: data/rollit.metainfo.xml.in:133
 msgid "Implemented dice presets"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:136
+#: data/rollit.metainfo.xml.in:138
 msgid "Remembers previously-selected number for highest possible roll"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:142
+#: data/rollit.metainfo.xml.in:144
 msgid "Added release info to AppData"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:143
+#: data/rollit.metainfo.xml.in:145
 msgid "Rewrote app description to be more concise"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:144
+#: data/rollit.metainfo.xml.in:146
 msgid "French translations by @NathanBnm"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:150
+#: data/rollit.metainfo.xml.in:152
 msgid "AppData fixes"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:155
+#: data/rollit.metainfo.xml.in:157
 msgid "Initial release"
 msgstr ""
 

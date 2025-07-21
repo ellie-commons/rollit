@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-21 23:17+0200\n"
+"POT-Creation-Date: 2025-07-21 23:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,11 +72,17 @@ msgstr ""
 msgid "Clear history"
 msgstr ""
 
-#: src/Widgets/Buttons/PreviousRoll.vala:33
+#. /TRANSLATORS: %s is replace by a dice number. Ex: d100.
+#: src/Widgets/Buttons/PreviousRoll.vala:31
+#, c-format
+msgid "d%s: "
+msgstr ""
+
+#: src/Widgets/Buttons/PreviousRoll.vala:55
 msgid "Copied"
 msgstr ""
 
-#: src/Widgets/Buttons/PreviousRoll.vala:47
+#: src/Widgets/Buttons/PreviousRoll.vala:69
 msgid "Copy result to clipboard"
 msgstr ""
 
