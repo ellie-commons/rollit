@@ -12,21 +12,43 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
     private Gtk.Image copy_icon;
     private uint timeout_id;
 
+    public string dicetype_label { get; construct set; }
     public string roll_label { get; construct set; }
-    public Gtk.Label roll_amount { get; set; }
 
-    public PreviousRoll (int roll) {
+    public Gtk.Label roll_amount { get; set; }
+    private Gtk.Label dicetype { get; set; }
+
+    public PreviousRoll (int roll, int maxroll) {
         Object (
-            roll_label: roll.to_string ()
+            roll_label: roll.to_string (),
+            dicetype_label: maxroll.to_string ()
         );
     }
 
     construct {
-        roll_amount = new Gtk.Label (roll_label);
 
-        copy_icon = new Gtk.Image.from_icon_name ("edit-copy-symbolic");
+        ///TRANSLATORS: %s is replace by a dice number. Ex: d100.
+        dicetype = new Gtk.Label (_("d%s: ").printf (dicetype_label)) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
 
-        var button_layout = new Gtk.Box (HORIZONTAL, 12);
+        roll_amount = new Gtk.Label (roll_label) {
+            halign = Gtk.Align.CENTER,
+            hexpand = true
+        };
+
+        copy_icon = new Gtk.Image.from_icon_name ("edit-copy-symbolic") {
+            halign = Gtk.Align.END,
+            hexpand = true
+        };
+
+        var button_layout = new Gtk.Box (HORIZONTAL, 12) {
+            halign = Gtk.Align.FILL,
+            hexpand = true
+        };
+
+        button_layout.append (dicetype);
         button_layout.append (roll_amount);
         button_layout.append (copy_icon);
 

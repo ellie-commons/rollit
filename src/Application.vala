@@ -57,7 +57,7 @@ public class Rollit.Application : Gtk.Application {
 
         var roll_action = new SimpleAction ("roll", null);
         add_action (roll_action);
-        set_accels_for_action ("app.roll", {"<Control>r"});
+        set_accels_for_action ("app.roll", {"<Control>r", "r"});
 
         var clearhist_action = new SimpleAction ("clear_hist", null);
         add_action (clearhist_action);

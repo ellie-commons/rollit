@@ -79,7 +79,9 @@
         <p>3.0.0 Revival</p>
         <ul>
           <li>Updated to GTK4 with the permission of its original author @zelikos</li>
-          <li>More dice options</li>
+          <li>More dice options, because i need dices when GMing</li>
+          <li>More accessible accels for the GMs</li>
+          <li>Now in german</li>
         </ul>
       </description>
     </release>

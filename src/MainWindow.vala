@@ -90,7 +90,7 @@ public class Rollit.MainWindow : Gtk.Window {
         roll_button = new Gtk.Button.with_label (_("Roll")) {
             width_request = 96
         };
-        roll_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R"}, roll_button.label);
+        roll_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R", "R"}, roll_button.label);
         roll_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         menu_menu = new Rollit.Menu ();
@@ -163,7 +163,10 @@ public class Rollit.MainWindow : Gtk.Window {
     }
 
     private void on_roll () {
-        roll_history.add_roll (number_display.num_gen (menu_menu.max_roll));
+        roll_history.add_roll (
+            number_display.num_gen (menu_menu.max_roll),
+            menu_menu.max_roll
+        );
     }
 
     private void on_clear_history () {

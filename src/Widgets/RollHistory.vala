@@ -69,8 +69,8 @@ public class Rollit.RollHistory : Gtk.Box {
         clear_button.sensitive = false;
     }
 
-    public void add_roll (int roll) {
-        var new_roll = new Rollit.PreviousRoll (roll);
+    public void add_roll (int roll, int maxroll) {
+        var new_roll = new Rollit.PreviousRoll (roll, maxroll);
 
         previous_rolls_list.append (new_roll);
         previous_rolls_box.prepend (new_roll);
