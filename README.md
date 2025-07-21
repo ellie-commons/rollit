@@ -3,7 +3,6 @@
   <img alt="An icon representing a six-sided dice, showing a three" src="data/icons/128.svg" />
   <h1>Roll-It</h1>
   <h3>Simply roll a dice</h3>
-</div>
 
 <span align="center"> <img class="center" src="https://github.com/ellie-commons/rollit/blob/main/data/screenshots/screenshot1.png" alt="A screenshot of a window displaying a dice result and a history of past rolls"></span>
 </div>
