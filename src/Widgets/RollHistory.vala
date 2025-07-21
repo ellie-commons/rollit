@@ -10,8 +10,7 @@ public class Rollit.RollHistory : Gtk.Box {
     private GLib.List<PreviousRoll> previous_rolls_list;
     private Gtk.ScrolledWindow scroll_box;
     private Gtk.ListBox previous_rolls_box;
-
-    public Gtk.Button clear_button;
+    private Gtk.Button clear_button;
 
     construct {
 
@@ -54,21 +53,20 @@ public class Rollit.RollHistory : Gtk.Box {
         append (scroll_box);
         append (clear_button);
 
-        clear_button.clicked.connect (() => {
-            clear_rolls ();
-            clear_button.sensitive = false;
-        });
+        clear_button.clicked.connect (clear_rolls);
 
         show ();
     }
 
-    private void clear_rolls () {
+    public void clear_rolls () {
         previous_rolls_box.remove_all ();
 
         foreach (PreviousRoll item in previous_rolls_list) {
             previous_rolls_list.remove (item);
             item.destroy ();
         }
+
+        clear_button.sensitive = false;
     }
 
     public void add_roll (int roll) {

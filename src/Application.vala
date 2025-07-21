@@ -21,7 +21,7 @@
 public class Rollit.Application : Gtk.Application {
 
     public static GLib.Settings settings;
-
+    public static Rollit.MainWindow window;
 
     public Application () {
         Object (
@@ -53,18 +53,31 @@ public class Rollit.Application : Gtk.Application {
             var if_hist_visible = Application.settings.get_boolean ("show-history");
             Application.settings.set_boolean ("show-history", (! if_hist_visible));
         });
+
+
+        var roll_action = new SimpleAction ("roll", null);
+        add_action (roll_action);
+        set_accels_for_action ("app.roll", {"<Control>r"});
+
+        var clearhist_action = new SimpleAction ("clear_hist", null);
+        add_action (clearhist_action);
+        set_accels_for_action ("app.clear_hist", {"<Control>l"});
+
     }
 
     protected override void activate () {
         var gtk_settings = Gtk.Settings.get_default ();
         var granite_settings = Granite.Settings.get_default ();
 
-        // gtk_settings.gtk_application_prefer_dark_theme = settings.get_boolean ("dark-style");
 
-        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+        gtk_settings.gtk_application_prefer_dark_theme = (
+                                                            granite_settings.prefers_color_scheme == DARK
+        );
 
         granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+            gtk_settings.gtk_application_prefer_dark_theme = (
+                                                                granite_settings.prefers_color_scheme == DARK
+            );
         });
 
         var provider = new Gtk.CssProvider ();
@@ -75,11 +88,15 @@ public class Rollit.Application : Gtk.Application {
             Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
         );
 
-        var window = new Rollit.MainWindow (this);
+        if (window == null) {
+            window = new Rollit.MainWindow (this);
+            add_window (window);
+            window.show ();
 
-        add_window (window);
+        } else {
+            window.present ();
+        }
 
-        window.show ();
     }
 
     public static int main (string[] args) {

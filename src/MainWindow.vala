@@ -20,6 +20,21 @@ public class Rollit.MainWindow : Gtk.Window {
 
     private bool history_visible;
 
+    public SimpleActionGroup actions { get; construct; }
+
+    public const string ACTION_PREFIX = "app.";
+    public const string ACTION_ROLL = "roll";
+    public const string ACTION_CLEAR_HISTORY = "clear_hist";
+
+    public static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
+
+    private const GLib.ActionEntry[] ACTION_ENTRIES = {
+        { ACTION_ROLL, on_roll },
+        { ACTION_CLEAR_HISTORY, on_clear_history}
+    };
+
+
+
 
     public MainWindow (Rollit.Application app) {
         Object (
@@ -31,10 +46,9 @@ public class Rollit.MainWindow : Gtk.Window {
     construct {
         Intl.setlocale ();
 
-        //  var toggle_history_action = new SimpleAction ("toggle_history", null);
-        //  application.add_action (toggle_history_action);
-        //  application.set_accels_for_action ("app.quit", {"<Control>h"});
-        //  toggle_history_action.activate.connect (on_history_toggled);
+        var actions = new SimpleActionGroup ();
+        actions.add_action_entries (ACTION_ENTRIES, this);
+        insert_action_group ("app", actions);
 
         restore_state ();
 
@@ -114,9 +128,7 @@ public class Rollit.MainWindow : Gtk.Window {
 
         roll_history.visible = history_visible;
 
-        roll_button.clicked.connect (e => {
-            roll_history.add_roll (number_display.num_gen (menu_menu.max_roll));
-        });
+        roll_button.clicked.connect (on_roll);
 
         history_button.clicked.connect (on_history_toggled);
 
@@ -221,5 +233,12 @@ public class Rollit.MainWindow : Gtk.Window {
         Application.settings.set_boolean ("show-history", !roll_history.visible);
     }
 
+    private void on_roll () {
+        roll_history.add_roll (number_display.num_gen (menu_menu.max_roll));
+    }
+
+    private void on_clear_history () {
+        roll_history.clear_rolls ();
+    }
 
 }
