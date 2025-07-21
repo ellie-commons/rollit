@@ -24,6 +24,9 @@ public class Rollit.MenuItem : Gtk.Button {
         dice_radio = new Gtk.CheckButton ();
         var accel_label = new Granite.AccelLabel (dice_label, dice_accel);
 
+        ///TRANSLATORS: %s is here replaced with a number
+        tooltip_text = _("Press %s to immediately select this dice").printf (dice_accel);
+
         var box = new Gtk.Box (HORIZONTAL, 6);
         box.append (dice_radio);
         box.append (accel_label);

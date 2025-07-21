@@ -27,16 +27,31 @@ public class Rollit.MainWindow : Gtk.Window {
     public const string ACTION_CLEAR_HISTORY = "clear_hist";
     public const string ACTION_MENU = "menu";
 
+    public const string ACTION_FOURSIDED = "foursided";
+    public const string ACTION_SIXSIDED = "sixsided";
+    public const string ACTION_EIGHTSIDED = "eightsided";
+    public const string ACTION_TENSIDED = "tensided";
+    public const string ACTION_TWELVESIDED = "twelvesided";
+    public const string ACTION_TWENTYSIDED = "twentysided";
+    public const string ACTION_HUNDREDSIDED = "hundredsided";
+    public const string ACTION_CUSTOMSIDED = "customsided";
+
+
     public static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
 
     private const GLib.ActionEntry[] ACTION_ENTRIES = {
         { ACTION_ROLL, on_roll },
         { ACTION_CLEAR_HISTORY, on_clear_history},
-        { ACTION_MENU, on_menu}
+        { ACTION_MENU, on_menu},
+        { ACTION_FOURSIDED, select_d4},
+        { ACTION_SIXSIDED, select_d6},
+        { ACTION_EIGHTSIDED, select_d8},
+        { ACTION_TENSIDED, select_d10},
+        { ACTION_TWELVESIDED, select_d12},
+        { ACTION_TWENTYSIDED, select_d20},
+        { ACTION_HUNDREDSIDED, select_d100},
+        { ACTION_CUSTOMSIDED, select_custom}
     };
-
-
-
 
     public MainWindow (Rollit.Application app) {
         Object (
@@ -68,9 +83,7 @@ public class Rollit.MainWindow : Gtk.Window {
 
         header.pack_end (history_button);
 
-
         titlebar = header;
-
 
         number_display = new Rollit.NumDisplay ();
 
@@ -88,7 +101,7 @@ public class Rollit.MainWindow : Gtk.Window {
         };
         menu_button.set_primary (true);
         menu_button.label = menu_menu.current_choice;
-        menu_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>D"}, _("Change dice"));
+        menu_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>M"}, _("Change dice"));
 
         menu_menu.label_changed.connect (( new_label) => {
             menu_button.label = new_label;
@@ -132,94 +145,7 @@ public class Rollit.MainWindow : Gtk.Window {
         roll_history.visible = history_visible;
 
         roll_button.clicked.connect (on_roll);
-
         history_button.clicked.connect (on_history_toggled);
-
-
-        /*  var accel_group = new Gtk.AccelGroup ();
-
-        accel_group.connect (
-            Gdk.Key.@1,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                menu_button.shortcut_pressed (1);
-                return true;
-            }
-        );
-
-        accel_group.connect (
-            Gdk.Key.@2,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                menu_button.shortcut_pressed (2);
-                return true;
-            }
-        );
-
-        accel_group.connect (
-            Gdk.Key.@3,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                menu_button.shortcut_pressed (3);
-                return true;
-            }
-        );
-
-        accel_group.connect (
-            Gdk.Key.@4,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                menu_button.shortcut_pressed (4);
-                return true;
-            }
-        );
-
-        accel_group.connect (
-            Gdk.Key.R,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                roll_button.clicked ();
-                menu_button.close_menu ();
-                return true;
-            }
-        );
-
-        accel_group.connect (
-            Gdk.Key.D,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                menu_button.clicked ();
-                return true;
-            }
-        );
-
-        accel_group.connect (
-            Gdk.Key.H,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                history_button.clicked ();
-                return true;
-            }
-        );
-
-        accel_group.connect (
-            Gdk.Key.L,
-            Gdk.ModifierType.CONTROL_MASK,
-            Gtk.AccelFlags.VISIBLE | Gtk.AccelFlags.LOCKED,
-            () => {
-                roll_history.clear_button.clicked ();
-                return true;
-            }
-        );
-
-        add_accel_group (accel_group);  */
     }
 
     private void restore_state () {
@@ -248,4 +174,12 @@ public class Rollit.MainWindow : Gtk.Window {
         menu_button.activate ();
     }
 
+    private void select_d4 () { menu_menu.four_sided.clicked (); }
+    private void select_d6 () { menu_menu.six_sided.clicked (); }
+    private void select_d8 () { menu_menu.eight_sided.clicked (); }
+    private void select_d10 () { menu_menu.ten_sided.clicked (); }
+    private void select_d12 () { menu_menu.twelve_sided.clicked (); }
+    private void select_d20 () { menu_menu.twenty_sided.clicked (); }
+    private void select_d100 () { menu_menu.hundred_sided.clicked (); }
+    private void select_custom () { menu_menu.custom_sided.activate (); }
 }

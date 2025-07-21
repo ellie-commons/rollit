@@ -65,8 +65,40 @@ public class Rollit.Application : Gtk.Application {
 
         var menu_action = new SimpleAction ("menu", null);
         add_action (clearhist_action);
-        set_accels_for_action ("app.menu", {"<Control>d"});
+        set_accels_for_action ("app.menu", {"<Control>m"});
 
+
+        var foursided = new SimpleAction ("foursided", null);
+        add_action (foursided);
+        set_accels_for_action ("app.foursided", {"1"});
+
+        var sixsided = new SimpleAction ("sixsided", null);
+        add_action (sixsided);
+        set_accels_for_action ("app.sixsided", {"2"});
+
+        var eightsided = new SimpleAction ("eightsided", null);
+        add_action (eightsided);
+        set_accels_for_action ("app.eightsided", {"3"});
+
+        var tensided = new SimpleAction ("tensided", null);
+        add_action (tensided);
+        set_accels_for_action ("app.tensided", {"4"});
+
+        var twelvesided = new SimpleAction ("twelvesided", null);
+        add_action (twelvesided);
+        set_accels_for_action ("app.twelvesided", {"5"});
+
+        var twentysided = new SimpleAction ("twentysided", null);
+        add_action (twentysided);
+        set_accels_for_action ("app.twentysided", {"6"});
+
+        var hundredsided = new SimpleAction ("hundredsided", null);
+        add_action (hundredsided);
+        set_accels_for_action ("app.hundredsided", {"7"});
+
+        var customsided = new SimpleAction ("customsided", null);
+        add_action (customsided);
+        set_accels_for_action ("app.customsided", {"0"});
     }
 
     protected override void activate () {
@@ -100,7 +132,6 @@ public class Rollit.Application : Gtk.Application {
         } else {
             window.present ();
         }
-
     }
 
     public static int main (string[] args) {

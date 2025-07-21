@@ -2,4 +2,5 @@ src/Widgets/Menu.vala
 src/Widgets/NumDisplay.vala
 src/Widgets/RollHistory.vala
 src/Widgets/Buttons/PreviousRoll.vala
+src/Widgets/Buttons/MenuItem.vala
 src/MainWindow.vala

@@ -8,37 +8,31 @@
 public class Rollit.Menu : Gtk.Popover {
 
     public signal void close_menu ();
-
     public string current_choice;
     public signal void label_changed (string new_label);
 
-    private SList<Gtk.CheckButton> dice_selection;
+    public Rollit.MenuItem four_sided;
+    public Rollit.MenuItem six_sided;
+    public Rollit.MenuItem eight_sided;
+    public Rollit.MenuItem ten_sided;
+    public Rollit.MenuItem twelve_sided;
+    public Rollit.MenuItem twenty_sided;
+    public Rollit.MenuItem hundred_sided;
 
-    private Rollit.MenuItem four_sided;
-    private Rollit.MenuItem six_sided;
-    private Rollit.MenuItem eight_sided;
-    private Rollit.MenuItem ten_sided;
-    private Rollit.MenuItem twelve_sided;
-    private Rollit.MenuItem twenty_sided;
-    private Rollit.MenuItem hundred_sided;
-
-    private Gtk.CheckButton custom_sided;
+    public Gtk.CheckButton custom_sided;
     private Gtk.SpinButton max_entry;
-
-    private Gtk.Popover menu_popover;
 
     public int max_roll { get; private set; }
 
     construct {
-        dice_selection = new SList<Gtk.CheckButton> ();
 
-        four_sided = new Rollit.MenuItem (_("d4"), "<Ctrl>1");
-        six_sided = new Rollit.MenuItem (_("d6"), "<Ctrl>2");
-        eight_sided = new Rollit.MenuItem (_("d8"), "<Ctrl>3");
-        ten_sided = new Rollit.MenuItem (_("d10"), "<Ctrl>4");
-        twelve_sided = new Rollit.MenuItem (_("d12"), "<Ctrl>5");
-        twenty_sided = new Rollit.MenuItem (_("d20"), "<ctrl>6");
-        hundred_sided = new Rollit.MenuItem (_("d100"), "<ctrl>7");
+        four_sided = new Rollit.MenuItem (_("d4"), "1");
+        six_sided = new Rollit.MenuItem (_("d6"), "2");
+        eight_sided = new Rollit.MenuItem (_("d8"), "3");
+        ten_sided = new Rollit.MenuItem (_("d10"), "4");
+        twelve_sided = new Rollit.MenuItem (_("d12"), "5");
+        twenty_sided = new Rollit.MenuItem (_("d20"), "6");
+        hundred_sided = new Rollit.MenuItem (_("d100"), "7");
 
         var presets = new Gtk.Box (VERTICAL, 6) {
             margin_top = 6,
@@ -54,16 +48,11 @@ public class Rollit.Menu : Gtk.Popover {
         presets.append (twenty_sided);
         presets.append (hundred_sided);
 
-        max_entry = new Gtk.SpinButton.with_range (1, 100, 1) {
+        max_entry = new Gtk.SpinButton.with_range (1, 1000, 1) {
             sensitive = false
         };
 
         custom_sided = new Gtk.CheckButton ();
-
-        foreach (var check in dice_selection) {
-            custom_sided.set_group (check);
-        }
-
         four_sided.dice_radio.set_group (custom_sided);
         six_sided.dice_radio.set_group (custom_sided);
         eight_sided.dice_radio.set_group (custom_sided);
@@ -72,11 +61,11 @@ public class Rollit.Menu : Gtk.Popover {
         twenty_sided.dice_radio.set_group (custom_sided);
         hundred_sided.dice_radio.set_group (custom_sided);
 
-
         var custom_setting = new Gtk.Box (HORIZONTAL, 6) {
             margin_bottom = 12,
             margin_start = margin_end = 12,
-            margin_top = 6
+            margin_top = 6,
+            tooltip_text = _("Press 0 to immediately choose the custom dice")
         };
 
         custom_setting.append (custom_sided);
@@ -198,25 +187,5 @@ public class Rollit.Menu : Gtk.Popover {
         current_choice = _("d%i").printf (max_roll);
         label_changed (current_choice);
 
-    }
-
-    public void shortcut_pressed (int shortcut) {
-        switch (shortcut) {
-            case 1:
-                six_sided.clicked ();
-                break;
-            case 2:
-                ten_sided.clicked ();
-                break;
-            case 3:
-                twenty_sided.clicked ();
-                break;
-            case 4:
-                custom_sided.toggled ();
-                if (menu_popover.visible) {
-                    max_entry.grab_focus ();
-                }
-                break;
-        }
     }
 }
