@@ -5,35 +5,44 @@ project('io.github.ellie_commons.rollit',
 gnome = import('gnome')
 i18n = import('i18n')
 
-add_project_arguments(
-    '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()),
-    language: 'c'
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
+
+
+#================================
+# Import the stylesheet
+
+## Set de config data
+config_data = configuration_data()
+config_data.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
+config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
+config_file = configure_file(
+    input: 'src/Config.vala.in',
+    output: '@BASENAME@',
+    configuration: config_data
 )
 
-subdir('src')
-
-asresources = gnome.compile_resources(
-    'as-resources',
-'data/rollit.gresource.xml',
-    source_dir: 'data',
-    c_name: 'as'
+# Le stylesheet
+gresource = gnome.compile_resources(
+    'gresource',
+    'data' / 'rollit.gresource.xml',
+    source_dir: 'data'
 )
 
 dependencies = [
-    dependency('gtk4', version: '>= 4.12'),
-    dependency('granite-7')
-]
+        dependency('granite-7'),
+        dependency('gtk4')
+    ]
 
-executable(
-    meson.project_name(),
-    sources,
-    asresources,
-    dependencies: dependencies,
-    install: true
-)
 
+
+#================================
+
+
+# Add subfolders for Meson to look
 subdir('data')
 subdir('po')
+subdir('src')
+
 
 gnome.post_install(
   glib_compile_schemas: true,

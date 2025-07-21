@@ -31,10 +31,10 @@ public class Rollit.MainWindow : Gtk.Window {
     construct {
         Intl.setlocale ();
 
-        //  var toggle_history_action = new SimpleAction ("toggle_history", null);
-        //  application.add_action (toggle_history_action);
-        //  application.set_accels_for_action ("app.quit", {"<Control>h"});
-        //  toggle_history_action.activate.connect (on_history_toggled);
+        var toggle_history_action = new SimpleAction ("toggle_history", null);
+        application.add_action (toggle_history_action);
+        application.set_accels_for_action ("app.quit", {"<Control>h"});
+        toggle_history_action.activate.connect (on_history_toggled);
 
         restore_state ();
 

@@ -1,14 +1,14 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Language: fr\n"
-"Language-Team: none\n"
-"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
+"Language: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
-"PO-Revision-Date: 2020-02-13 20:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "POT-Creation-Date: 2025-07-21 19:26+0200\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
 
@@ -19,48 +19,37 @@ msgid "d%i"
 msgstr "d%i"
 
 #: src/Widgets/Menu.vala:102
-#, fuzzy
 msgid "Dice settings"
-msgstr "Paramètres"
+msgstr "Würfel-Einstellungen"
 
 #: src/Widgets/NumDisplay.vala:32
 msgid "Ready to Roll"
-msgstr "Prêt à lancer le dé"
+msgstr "Bereit zum Aufbruch"
 
 #: src/Widgets/RollHistory.vala:35
 msgid "Clear"
-msgstr "Clair"
+msgstr "Klar"
 
 #: src/Widgets/RollHistory.vala:48
 msgid "Clear history"
-msgstr "Effacer l'historique"
+msgstr "Verlauf löschen"
 
 #: src/Widgets/Buttons/PreviousRoll.vala:33
 msgid "Copied"
-msgstr "Copié"
+msgstr "Kopiert"
 
 #: src/Widgets/Buttons/PreviousRoll.vala:47
 msgid "Copy result to clipboard"
-msgstr "Copier le résultat dans le presse-papiers"
+msgstr "Ergebnis in die Zwischenablage kopieren"
 
 #: src/MainWindow.vala:27
-#, fuzzy
 msgid "Roll-It"
-msgstr "Lancer le dé"
+msgstr "Roll-It"
 
 #: src/MainWindow.vala:50
 msgid "Roll history"
-msgstr "Historique des rouleaux"
+msgstr "Geschichte der Rolle"
 
 #: src/MainWindow.vala:61
 msgid "Roll"
-msgstr "Lancer le dé"
-
-#~ msgid "Light"
-#~ msgstr "Thème clair"
-
-#~ msgid "Dark"
-#~ msgstr "Thème sombre"
-
-#~ msgid "Max Roll:"
-#~ msgstr "Nombre max :"
+msgstr "Rolle"
