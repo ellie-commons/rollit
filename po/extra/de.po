@@ -1,18 +1,19 @@
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2025-07-21 23:40+0200\n"
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-21 23:40+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 
-#: data/rollit.metainfo.xml.in:8 data/rollit.desktop.in:3
+#: data/rollit.metainfo.xml.in:8
+#: data/rollit.desktop.in:3
 msgid "Roll-It"
 msgstr "Roll-It"
 
@@ -25,12 +26,8 @@ msgid "Simulate the results of rolling a die."
 msgstr "Simulieren Sie die Ergebnisse eines Würfelwurfs."
 
 #: data/rollit.metainfo.xml.in:13
-msgid ""
-"Quickly switch between several common die such as d6 or d20, or choose your "
-"own number of faces to roll against"
-msgstr ""
-"Wechseln Sie schnell zwischen verschiedenen gängigen Würfeln wie d6 oder "
-"d20, oder wählen Sie Ihre eigene Anzahl von Würfelflächen"
+msgid "Quickly switch between several common die such as d6 or d20, or choose your own number of faces to roll against"
+msgstr "Wechseln Sie schnell zwischen verschiedenen gängigen Würfeln wie d6 oder d20, oder wählen Sie Ihre eigene Anzahl von Würfelflächen"
 
 #: data/rollit.metainfo.xml.in:15
 msgid "Keyboard shortcuts:"
@@ -46,16 +43,11 @@ msgstr "Würfelmenü rufen mit Strg+D auf"
 
 #: data/rollit.metainfo.xml.in:19
 msgid "Use Ctrl + Number to select one of the preset option"
-msgstr ""
-"Verwenden Sie Strg + Zahl, um eine der voreingestellten Optionen auszuwählen"
+msgstr "Verwenden Sie Strg + Zahl, um eine der voreingestellten Optionen auszuwählen"
 
 #: data/rollit.metainfo.xml.in:20
-msgid ""
-"Hit Ctrl+0 to select the custom die option and focus the number entry when "
-"the menu is visible"
-msgstr ""
-"Drücken Sie Strg+0, um die benutzerdefinierte Würfeloption auszuwählen und "
-"die Zahleneingabe zu fokussieren, wenn das Menü sichtbar ist."
+msgid "Hit Ctrl+0 to select the custom die option and focus the number entry when the menu is visible"
+msgstr "Drücken Sie Strg+0, um die benutzerdefinierte Würfeloption auszuwählen und die Zahleneingabe zu fokussieren, wenn das Menü sichtbar ist."
 
 #: data/rollit.metainfo.xml.in:21
 msgid "Toggle the roll history pane with Ctrl+H"
@@ -66,13 +58,8 @@ msgid "Clear roll history with Ctrl+L"
 msgstr "Rollenverlauf löschen mit Strg+L"
 
 #: data/rollit.metainfo.xml.in:24
-msgid ""
-"This is an update of an older codebase of Chance, which is no longer "
-"directed toward elementary OS. Feel free to check it out on flathub!"
-msgstr ""
-"Dies ist ein Update einer älteren Codebasis von Chance, die nicht mehr auf "
-"elementary OS ausgerichtet ist. Fühlen Sie sich frei, es auf flathub zu "
-"überprüfen!"
+msgid "This is an update of an older codebase of Chance, which is no longer directed toward elementary OS. Feel free to check it out on flathub!"
+msgstr "Dies ist ein Update einer älteren Codebasis von Chance, die nicht mehr auf elementary OS ausgerichtet ist. Fühlen Sie sich frei, es auf flathub zu überprüfen!"
 
 #: data/rollit.metainfo.xml.in:28
 msgid "The main window of Roll-It. Roll dices and check history"
@@ -124,20 +111,19 @@ msgstr "3.0.0 Wiederbelebung"
 
 #: data/rollit.metainfo.xml.in:81
 msgid "Updated to GTK4 with the permission of its original author @zelikos"
-msgstr ""
-"Aktualisiert auf GTK4 mit der Erlaubnis des ursprünglichen Autors @zelikos"
+msgstr "Aktualisiert auf GTK4 mit der Erlaubnis des ursprünglichen Autors @zelikos"
 
 #: data/rollit.metainfo.xml.in:82
 msgid "More dice options, because i need dices when GMing"
-msgstr ""
+msgstr "Mehr Würfeloptionen, denn ich brauche Würfel beim GMing"
 
 #: data/rollit.metainfo.xml.in:83
 msgid "More accessible accels for the GMs"
-msgstr ""
+msgstr "Besser zugängliche Akkus für die GMs"
 
 #: data/rollit.metainfo.xml.in:84
 msgid "Now in german"
-msgstr ""
+msgstr "Jetzt auf Deutsch"
 
 #: data/rollit.metainfo.xml.in:90
 msgid "Backend Updates"
@@ -165,8 +151,7 @@ msgstr "Berücksichtigt neue dunkle Stilvorlieben"
 
 #: data/rollit.metainfo.xml.in:103
 msgid "Headerbar and 'Roll' button follow the system accent color"
-msgstr ""
-"Kopfleiste und Schaltfläche \"Rollen\" folgen der Akzentfarbe des Systems"
+msgstr "Kopfleiste und Schaltfläche \"Rollen\" folgen der Akzentfarbe des Systems"
 
 #: data/rollit.metainfo.xml.in:104
 msgid "Dice menu now features keyboard shortcut labels"
@@ -182,19 +167,15 @@ msgstr "Verlauf und Tastaturkürzel"
 
 #: data/rollit.metainfo.xml.in:113
 msgid "Previous rolls are now stored in a new roll history pane"
-msgstr ""
-"Frühere Rollen werden jetzt in einem neuen Rollenverlaufsfenster gespeichert."
+msgstr "Frühere Rollen werden jetzt in einem neuen Rollenverlaufsfenster gespeichert."
 
 #: data/rollit.metainfo.xml.in:114
 msgid "Many keyboard shortcuts have been added"
 msgstr "Viele Tastaturkürzel wurden hinzugefügt"
 
 #: data/rollit.metainfo.xml.in:115
-msgid ""
-"Custom die value is now saved regardless of the last-selected die option"
-msgstr ""
-"Benutzerdefinierter Würfelwert wird nun unabhängig von der zuletzt gewählten "
-"Würfeloption gespeichert"
+msgid "Custom die value is now saved regardless of the last-selected die option"
+msgstr "Benutzerdefinierter Würfelwert wird nun unabhängig von der zuletzt gewählten Würfeloption gespeichert"
 
 #: data/rollit.metainfo.xml.in:116
 msgid "More code cleanups and refactoring on the backend"
