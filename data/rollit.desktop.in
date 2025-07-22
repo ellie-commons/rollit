@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Roll-It
 GenericName=Dice Roller App
-Comment=Roll the dice
+Comment=Simply roll a dice
 Categories=Amusement;Utility;
 Exec=io.github.ellie_commons.rollit
 Icon=io.github.ellie_commons.rollit

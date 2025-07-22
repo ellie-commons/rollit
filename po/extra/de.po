@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 19:14+0200\n"
+"POT-Creation-Date: 2025-07-22 19:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 msgid "Roll-It"
 msgstr "Roll-It"
 
-#: data/rollit.metainfo.xml.in:9
+#: data/rollit.metainfo.xml.in:9 data/rollit.desktop.in:5
 msgid "Simply roll a dice"
 msgstr "Einfach würfeln"
 
@@ -271,13 +271,12 @@ msgstr "Erste Veröffentlichung"
 msgid "Dice Roller App"
 msgstr "Würfelroller App"
 
-#: data/rollit.desktop.in:5
-msgid "Roll the dice"
-msgstr "Würfeln Sie"
-
 #: data/rollit.desktop.in:11
 msgid "Die;Dice;Roll;Random;Number;Rnd;Num;"
 msgstr "Würfel;Würfel;Wurf;Zufällig;Zahl;Rnd;Num;"
+
+#~ msgid "Roll the dice"
+#~ msgstr "Würfeln Sie"
 
 #~ msgid "More dice options"
 #~ msgstr "Mehr Würfeloptionen"

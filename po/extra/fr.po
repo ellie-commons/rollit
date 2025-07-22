@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 19:14+0200\n"
+"POT-Creation-Date: 2025-07-22 19:19+0200\n"
 "PO-Revision-Date: 2020-02-13 20:30+0100\n"
 "Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 msgid "Roll-It"
 msgstr "Roll-It"
 
-#: data/rollit.metainfo.xml.in:9
+#: data/rollit.metainfo.xml.in:9 data/rollit.desktop.in:5
 msgid "Simply roll a dice"
 msgstr "Il suffit de lancer un dé"
 
@@ -280,13 +280,12 @@ msgstr "Version initiale"
 msgid "Dice Roller App"
 msgstr "Application de lancer de dé"
 
-#: data/rollit.desktop.in:5
-msgid "Roll the dice"
-msgstr "Lancez le dé"
-
 #: data/rollit.desktop.in:11
 msgid "Die;Dice;Roll;Random;Number;Rnd;Num;"
 msgstr "Dé;Lancer;Aléatoire;Nombre;Rnd;Num;"
+
+#~ msgid "Roll the dice"
+#~ msgstr "Lancez le dé"
 
 #~ msgid "More dice options"
 #~ msgstr "Plus d'options de dés"
