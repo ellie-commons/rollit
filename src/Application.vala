@@ -48,7 +48,7 @@ public class Rollit.Application : Gtk.Application {
 
         var toggle_history = new SimpleAction ("toggle_history", null);
         add_action (toggle_history);
-        set_accels_for_action ("app.toggle_history", { "<Control>h", null });
+        set_accels_for_action ("app.toggle_history", { "<Control>h", "h" });
         toggle_history.activate.connect (() => {
             var if_hist_visible = Application.settings.get_boolean ("show-history");
             Application.settings.set_boolean ("show-history", (! if_hist_visible));
@@ -61,7 +61,7 @@ public class Rollit.Application : Gtk.Application {
 
         var clearhist_action = new SimpleAction ("clear_hist", null);
         add_action (clearhist_action);
-        set_accels_for_action ("app.clear_hist", {"<Control>l"});
+        set_accels_for_action ("app.clear_hist", {"<Control>l", "l"});
 
         var menu_action = new SimpleAction ("menu", null);
         add_action (clearhist_action);

@@ -35,13 +35,14 @@ public class Rollit.RollHistory : Gtk.Box {
         var clear_icon = new Gtk.Image.from_icon_name ("edit-clear-all-symbolic");
 
         var bottom_row = new Gtk.Box (HORIZONTAL, 6) {
+            margin_top = margin_bottom = 6,
             valign = Gtk.Align.END
         };
         bottom_row.append (clear_text);
         bottom_row.append (clear_icon);
 
         clear_button = new Gtk.Button () {
-            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>L"}, _("Clear history")),
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>L", "L"}, _("Clear history")),
             sensitive = false
         };
         clear_button.add_css_class (Granite.STYLE_CLASS_FLAT);

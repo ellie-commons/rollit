@@ -78,7 +78,7 @@ public class Rollit.MainWindow : Gtk.Window {
         header.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         history_button = new Gtk.Button.from_icon_name ("document-open-recent-symbolic") {
-            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H","M"}, _("Roll history"))
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H", "H"}, _("Roll history"))
         };
 
         header.pack_end (history_button);
@@ -88,21 +88,20 @@ public class Rollit.MainWindow : Gtk.Window {
         number_display = new Rollit.NumDisplay ();
 
         roll_button = new Gtk.Button.with_label (_("Roll")) {
-            width_request = 96
+            width_request = 96,
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R", "R"}, roll_button.label)
         };
-        roll_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R", "R"}, roll_button.label);
         roll_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         menu_menu = new Rollit.Menu ();
         menu_button = new Gtk.MenuButton () {
             popover = menu_menu,
-            width_request = 96,
-            always_show_arrow = true
+            label = menu_menu.current_choice,
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>M", "M"}, _("Change dice")),
+            width_request = 96
         };
         menu_button.set_primary (true);
-        menu_button.label = menu_menu.current_choice;
-        menu_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>M"}, _("Change dice"));
-        menu_button.set_direction(Gtk.ArrowType.UP);
+        menu_button.set_direction (Gtk.ArrowType.NONE);
 
         menu_menu.label_changed.connect (( new_label) => {
             menu_button.label = new_label;
@@ -175,7 +174,7 @@ public class Rollit.MainWindow : Gtk.Window {
     }
 
     private void on_menu () {
-        if (menu_menu.visible) {
+        if (menu_menu.is_focus ()) {
             menu_menu.popdown ();
         } else {
             menu_menu.popup ();
