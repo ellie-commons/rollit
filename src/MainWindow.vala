@@ -71,7 +71,7 @@ public class Rollit.MainWindow : Gtk.Window {
 
         header = new Gtk.HeaderBar ();
 
-        var label = new Gtk.Label (title);
+        var label = new Gtk.Label ( _("Roll-It"));
         label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
 
         header.title_widget = label;
