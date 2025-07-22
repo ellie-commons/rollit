@@ -74,6 +74,11 @@
     </branding>
 
   <releases>
+    <release version="3.0.2" date="2025-07-22">
+      <description>
+        <p>Quick correction: I forgot the screenshots</p>
+      </description>
+    </release>
     <release version="3.0.1" date="2025-07-22">
       <description>
         <p>Quick correction: fix broken label</p>
