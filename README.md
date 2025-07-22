@@ -26,7 +26,7 @@ The code is originally from @zelikos, who allowed us to update it for elementary
 
 You can donate to various contributors:
  - Akzel/Zelikos, the original author (https://ko-fi.com/akzel94)
- - teamcons, the main devs and maintainers behind Cherrypick (https://ko-fi.com/teamcons)
+ - teamcons, the main devs and maintainers behind Roll-It as of now (https://ko-fi.com/teamcons)
 
 
 ## 🏗️ Building
