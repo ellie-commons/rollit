@@ -71,7 +71,7 @@ msgstr "Verlauf löschen"
 #: src/Widgets/Buttons/PreviousRoll.vala:31
 #, c-format
 msgid "d%s: "
-msgstr "d%s: "
+msgstr "w%s: "
 
 #: src/Widgets/Buttons/PreviousRoll.vala:55
 msgid "Copied"
