@@ -39,14 +39,14 @@ body:
   - type: input
     attributes:
       label: OS name and version
-      placeholder: elementary OS 6.1 Jólnir
+      placeholder: elementary OS 8.1 Circe
     validations:
       required: true
   - type: input
     attributes:
       label: Version
-      description: The version of picker you are using
-      placeholder: 1.0.2
+      description: The version of Roll-It you are using
+      placeholder: 3.0.0
     validations:
       required: true
   - type: textarea
