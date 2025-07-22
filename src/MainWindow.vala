@@ -174,7 +174,11 @@ public class Rollit.MainWindow : Gtk.Window {
     }
 
     private void on_menu () {
-        menu_button.activate ();
+        if (menu_menu.visible) {
+            menu_menu.popdown ();
+        } else {
+            menu_menu.popup ();
+        }
     }
 
     private void select_d4 () { menu_menu.four_sided.clicked (); }
