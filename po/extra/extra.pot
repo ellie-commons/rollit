@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-21 23:40+0200\n"
+"POT-Creation-Date: 2025-07-22 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,11 @@ msgid "Keyboard shortcuts:"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:17
-msgid "Roll the dice with Ctrl+R"
+msgid "Roll the dice with Ctrl+R or R"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:18
-msgid "Bring up the dice menu with Ctrl+D"
+msgid "Bring up the dice menu with Ctrl+M or M"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:19
@@ -120,123 +120,136 @@ msgid "3.0.0 Revival"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:81
-msgid "Updated to GTK4 with the permission of its original author @zelikos"
+msgid ""
+"Updated to GTK4 with the permission of its original author @zelikos. Thank "
+"you!"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:82
-msgid "More dice options, because i need dices when GMing"
+msgid "Display dice type in history so you remember what you rolled it with"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:83
-msgid "More accessible accels for the GMs"
+msgid ""
+"More dice options, because i need dices when GMing and cant be arsed to hit "
+"Ctrl"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:84
-msgid "Now in german"
+msgid ""
+"More accessible accels for the TTRPG GMs who use their laptop while GMing"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:90
-msgid "Backend Updates"
+#: data/rollit.metainfo.xml.in:85
+msgid "Custom can go HIGHER. UP TO 1000. Roll MASSIVE DICES"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:86
+msgid "Now in German"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:92
-msgid "Updated category information for better discoverability"
-msgstr ""
-
-#: data/rollit.metainfo.xml.in:93
-msgid "Stricter sandboxing"
+msgid "Backend Updates"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:94
+msgid "Updated category information for better discoverability"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:95
+msgid "Stricter sandboxing"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:96
 msgid "Bump platform to 6.1"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:100
+#: data/rollit.metainfo.xml.in:102
 msgid "elementary OS 6 Update!"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:102
+#: data/rollit.metainfo.xml.in:104
 msgid "Respects new dark style preference"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:103
+#: data/rollit.metainfo.xml.in:105
 msgid "Headerbar and 'Roll' button follow the system accent color"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:104
+#: data/rollit.metainfo.xml.in:106
 msgid "Dice menu now features keyboard shortcut labels"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:105
+#: data/rollit.metainfo.xml.in:107
 msgid "Various refinements to the UI and the backend"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:111
+#: data/rollit.metainfo.xml.in:113
 msgid "History and Keyboard Shortcuts"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:113
+#: data/rollit.metainfo.xml.in:115
 msgid "Previous rolls are now stored in a new roll history pane"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:114
+#: data/rollit.metainfo.xml.in:116
 msgid "Many keyboard shortcuts have been added"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:115
+#: data/rollit.metainfo.xml.in:117
 msgid ""
 "Custom die value is now saved regardless of the last-selected die option"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:116
+#: data/rollit.metainfo.xml.in:118
 msgid "More code cleanups and refactoring on the backend"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:122
+#: data/rollit.metainfo.xml.in:124
 msgid "Visual Tweaks and Backend Stuff"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:124
+#: data/rollit.metainfo.xml.in:126
 msgid "Fixed spacing of the combo-button and number display"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:125
+#: data/rollit.metainfo.xml.in:127
 msgid "Header styling adjusted"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:126
+#: data/rollit.metainfo.xml.in:128
 msgid "Prep for elementary OS 6 support"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:127
+#: data/rollit.metainfo.xml.in:129
 msgid "Code cleanups"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:133
+#: data/rollit.metainfo.xml.in:135
 msgid "Implemented dice presets"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:138
+#: data/rollit.metainfo.xml.in:140
 msgid "Remembers previously-selected number for highest possible roll"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:144
+#: data/rollit.metainfo.xml.in:146
 msgid "Added release info to AppData"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:145
+#: data/rollit.metainfo.xml.in:147
 msgid "Rewrote app description to be more concise"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:146
+#: data/rollit.metainfo.xml.in:148
 msgid "French translations by @NathanBnm"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:152
+#: data/rollit.metainfo.xml.in:154
 msgid "AppData fixes"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:157
+#: data/rollit.metainfo.xml.in:159
 msgid "Initial release"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-21 23:40+0200\n"
+"POT-Creation-Date: 2025-07-22 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Clear"
 msgstr ""
 
-#: src/Widgets/RollHistory.vala:47
+#: src/Widgets/RollHistory.vala:45
 msgid "Clear history"
 msgstr ""
 
@@ -104,6 +104,6 @@ msgstr ""
 msgid "Roll"
 msgstr ""
 
-#: src/MainWindow.vala:104
+#: src/MainWindow.vala:100
 msgid "Change dice"
 msgstr ""
