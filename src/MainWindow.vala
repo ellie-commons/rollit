@@ -96,12 +96,13 @@ public class Rollit.MainWindow : Gtk.Window {
         menu_menu = new Rollit.Menu ();
         menu_button = new Gtk.MenuButton () {
             popover = menu_menu,
-            direction = Gtk.ArrowType.UP,
-            width_request = 96
+            width_request = 96,
+            always_show_arrow = true
         };
         menu_button.set_primary (true);
         menu_button.label = menu_menu.current_choice;
         menu_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>M"}, _("Change dice"));
+        menu_button.set_direction(Gtk.ArrowType.UP);
 
         menu_menu.label_changed.connect (( new_label) => {
             menu_button.label = new_label;
