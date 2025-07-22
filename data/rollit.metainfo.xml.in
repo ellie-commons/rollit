@@ -14,8 +14,8 @@
 
     <p>Keyboard shortcuts:</p>
     <ul>
-      <li>Roll the dice with Ctrl+R</li>
-      <li>Bring up the dice menu with Ctrl+D</li>
+      <li>Roll the dice with Ctrl+R or R</li>
+      <li>Bring up the dice menu with Ctrl+M or M</li>
       <li>Use Ctrl + Number to select one of the preset option</li>
       <li>Hit Ctrl+0 to select the custom die option and focus the number entry when the menu is visible</li>
       <li>Toggle the roll history pane with Ctrl+H</li>
@@ -78,10 +78,11 @@
       <description>
         <p>3.0.0 Revival</p>
         <ul>
-          <li>Updated to GTK4 with the permission of its original author @zelikos</li>
-          <li>More dice options, because i need dices when GMing</li>
-          <li>More accessible accels for the GMs</li>
-          <li>Now in german</li>
+          <li>Updated to GTK4 with the permission of its original author @zelikos. Thank you!</li>
+          <li>More dice options, because i need dices when GMing and cant be arsed to hit Ctrl</li>
+          <li>More accessible accels for the TTRPG GMs who use their laptop while GMing</li>
+          <li>Custom can go HIGHER. UP TO 1000. Roll MASSIVE DICES</li>
+          <li>Now in German</li>
         </ul>
       </description>
     </release>
