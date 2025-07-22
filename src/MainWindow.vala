@@ -78,7 +78,7 @@ public class Rollit.MainWindow : Gtk.Window {
         header.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         history_button = new Gtk.Button.from_icon_name ("document-open-recent-symbolic") {
-            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H"}, _("Roll history"))
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H","M"}, _("Roll history"))
         };
 
         header.pack_end (history_button);
