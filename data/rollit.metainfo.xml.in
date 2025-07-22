@@ -70,10 +70,15 @@
 
     <branding>
       <color type="primary" scheme_preference="light">#a56de2</color>
-      <color type="primary" scheme_preference="dark">##634187</color>
+      <color type="primary" scheme_preference="dark">#634187</color>
     </branding>
 
   <releases>
+    <release version="3.0.3" date="2025-07-22">
+      <description>
+        <p>Quickfix</p>
+      </description>
+    </release>
     <release version="3.0.2" date="2025-07-22">
       <description>
         <p>Quick correction: I forgot the screenshots</p>
