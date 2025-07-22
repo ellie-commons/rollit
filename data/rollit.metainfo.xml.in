@@ -79,6 +79,7 @@
         <p>3.0.0 Revival</p>
         <ul>
           <li>Updated to GTK4 with the permission of its original author @zelikos. Thank you!</li>
+          <li>Display dice type in history so you remember what you rolled it with</li>
           <li>More dice options, because i need dices when GMing and cant be arsed to hit Ctrl</li>
           <li>More accessible accels for the TTRPG GMs who use their laptop while GMing</li>
           <li>Custom can go HIGHER. UP TO 1000. Roll MASSIVE DICES</li>
