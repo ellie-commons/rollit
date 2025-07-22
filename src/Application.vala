@@ -65,7 +65,7 @@ public class Rollit.Application : Gtk.Application {
 
         var menu_action = new SimpleAction ("menu", null);
         add_action (clearhist_action);
-        set_accels_for_action ("app.menu", {"<Control>m"});
+        set_accels_for_action ("app.menu", {"<Control>m", "m"});
 
 
         var foursided = new SimpleAction ("foursided", null);
