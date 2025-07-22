@@ -34,10 +34,7 @@ public class Rollit.RollHistory : Gtk.Box {
         var clear_text = new Gtk.Label (_("Clear"));
         var clear_icon = new Gtk.Image.from_icon_name ("edit-clear-all-symbolic");
 
-        var bottom_row = new Gtk.Box (HORIZONTAL, 12) {
-            margin_top = margin_bottom = 6,
-            margin_start = 6,
-            margin_end = 6,
+        var bottom_row = new Gtk.Box (HORIZONTAL, 6) {
             valign = Gtk.Align.END
         };
         bottom_row.append (clear_text);
