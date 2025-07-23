@@ -2,7 +2,7 @@
 Name=Roll-It
 GenericName=Dice Roller App
 Comment=Simply roll a dice
-Categories=Amusement;Utility;
+Categories=Game;RolePlaying;Math;GTK;
 Exec=io.github.ellie_commons.rollit
 Icon=io.github.ellie_commons.rollit
 SingleMainWindow=true
