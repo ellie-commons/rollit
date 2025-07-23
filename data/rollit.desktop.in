@@ -5,6 +5,7 @@ Comment=Simply roll a dice
 Categories=Amusement;Utility;
 Exec=io.github.ellie_commons.rollit
 Icon=io.github.ellie_commons.rollit
+SingleMainWindow=true
 Terminal=false
 Type=Application
 Keywords=Die;Dice;Roll;Random;Number;Rnd;Num;
