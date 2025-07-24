@@ -89,7 +89,7 @@ public class Rollit.MainWindow : Gtk.Window {
 
         roll_button = new Gtk.Button.with_label (_("Roll")) {
             width_request = 96,
-            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R", "R"}, roll_button.label)
+            tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>R", "R"}, _("Roll"))
         };
         roll_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
