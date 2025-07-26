@@ -1,4 +1,4 @@
-app-id: io.github.ellie_commons.rollit
+id: io.github.ellie_commons.rollit
 runtime: io.elementary.Platform
 runtime-version: '8.2'
 sdk: io.elementary.Sdk
