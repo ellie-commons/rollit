@@ -74,6 +74,14 @@
     </branding>
 
   <releases>
+    <release version="3.0.4" date="2025-07-26">
+      <description>
+        <ul>
+          <li></li>
+          <li>Localization: Dices in history localize properly</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.3" date="2025-07-22">
       <description>
         <p>Quickfix</p>
