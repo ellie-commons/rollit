@@ -1,11 +1,12 @@
 [Desktop Entry]
 Name=Roll-It
+Type=Application
 GenericName=Dice Roller
 Comment=Simply roll a dice
-Categories=Game;RolePlaying;Math;GTK;
 Exec=io.github.ellie_commons.rollit
 Icon=io.github.ellie_commons.rollit
+
+Categories=Game;RolePlaying;Math;GTK;
+Keywords=Die;Dice;Roll;Random;Number;Rnd;Num;
 SingleMainWindow=true
 Terminal=false
-Type=Application
-Keywords=Die;Dice;Roll;Random;Number;Rnd;Num;
