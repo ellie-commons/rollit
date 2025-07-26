@@ -7,8 +7,6 @@
 
 public class Rollit.PreviousRoll : Gtk.ListBoxRow {
 
-    public signal void copied ();
-
     private Gtk.Image copy_icon;
     private uint timeout_id;
 
@@ -18,6 +16,8 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
     public Gtk.Label roll_amount { get; set; }
     private Gtk.Label dicetype { get; set; }
 
+    public signal void copied ();
+
     public PreviousRoll (int roll, int maxroll) {
         Object (
             roll_label: roll.to_string (),
@@ -26,7 +26,6 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
     }
 
     construct {
-
         ///TRANSLATORS: %s is replace by a dice number. Ex: d100.
         dicetype = new Gtk.Label (_("d%s: ").printf (dicetype_label)) {
             halign = Gtk.Align.START,

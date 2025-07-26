@@ -35,7 +35,6 @@ public class Rollit.Application : Gtk.Application {
     }
 
     construct {
-
         Intl.setlocale (LocaleCategory.ALL, "");
         Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -53,7 +52,6 @@ public class Rollit.Application : Gtk.Application {
             var if_hist_visible = Application.settings.get_boolean ("show-history");
             Application.settings.set_boolean ("show-history", (! if_hist_visible));
         });
-
 
         var roll_action = new SimpleAction ("roll", null);
         add_action (roll_action);
@@ -136,7 +134,6 @@ public class Rollit.Application : Gtk.Application {
 
     public static int main (string[] args) {
         var app = new Application ();
-
         return app.run (args);
     }
 }
