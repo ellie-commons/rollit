@@ -6,7 +6,7 @@ Comment=Simply roll a dice
 Exec=io.github.ellie_commons.rollit
 Icon=io.github.ellie_commons.rollit
 
-Categories=Game;GameTool;RolePlaying;Math;GTK;
+Categories=Game;RolePlaying;Math;GTK;
 Keywords=Die;Dice;Roll;Random;Number;Rnd;Num;
 SingleMainWindow=true
 Terminal=false
