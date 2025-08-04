@@ -48,14 +48,8 @@ public class Rollit.RollHistory : Gtk.Box {
         clear_button.add_css_class (Granite.STYLE_CLASS_FLAT);
         clear_button.child = bottom_row;
 
-        var actionbar = new Gtk.ActionBar () {
-            valign = Gtk.Align.END
-        };
-        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
-        actionbar.pack_start (clear_button);
-
         append (scroll_box);
-        append (actionbar);
+        append (clear_button);
 
         clear_button.clicked.connect (clear_rolls);
 
