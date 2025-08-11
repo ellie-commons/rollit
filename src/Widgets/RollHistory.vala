@@ -13,7 +13,6 @@ public class Rollit.RollHistory : Gtk.Box {
     private Gtk.Button clear_button;
 
     construct {
-
         orientation = Gtk.Orientation.VERTICAL;
         spacing = 0;
         vexpand = true;
@@ -31,25 +30,24 @@ public class Rollit.RollHistory : Gtk.Box {
         };
         scroll_box.child = previous_rolls_box;
 
-        var clear_text = new Gtk.Label (_("Clear"));
-        var clear_icon = new Gtk.Image.from_icon_name ("edit-clear-all-symbolic");
-
-        var bottom_row = new Gtk.Box (HORIZONTAL, 6) {
-            margin_top = margin_bottom = 6,
-            valign = Gtk.Align.END
-        };
-        bottom_row.append (clear_text);
-        bottom_row.append (clear_icon);
+        var clear_button_label = new Gtk.Label (_("Clear Button"));
+        var clear_button_box = new Gtk.Box (HORIZONTAL, 0);
+        clear_button_box.append (new Gtk.Image.from_icon_name ("edit-clear-all-symbolic"));
+        clear_button_box.append (clear_button_label);
 
         clear_button = new Gtk.Button () {
+            child = clear_button_box,
             tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>L", "L"}, _("Clear history")),
             sensitive = false
         };
         clear_button.add_css_class (Granite.STYLE_CLASS_FLAT);
-        clear_button.child = bottom_row;
+        clear_button_label.mnemonic_widget = clear_button;
+
+        var bottom_row = new Gtk.ActionBar ();
+        bottom_row.pack_start (clear_button);
 
         append (scroll_box);
-        append (clear_button);
+        append (bottom_row);
 
         clear_button.clicked.connect (clear_rolls);
 
