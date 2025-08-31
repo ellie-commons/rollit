@@ -39,6 +39,11 @@ public class Rollit.Application : Gtk.Application {
         Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (GETTEXT_PACKAGE);
+    }
+
+    protected override void startup () {
+        base.startup ();
+        Granite.init ();
 
         var quit_action = new SimpleAction ("quit", null);
         add_action (quit_action);
@@ -64,7 +69,6 @@ public class Rollit.Application : Gtk.Application {
         var menu_action = new SimpleAction ("menu", null);
         add_action (clearhist_action);
         set_accels_for_action ("app.menu", {"<Control>m", "m"});
-
 
         var foursided = new SimpleAction ("foursided", null);
         add_action (foursided);
