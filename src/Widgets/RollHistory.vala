@@ -45,6 +45,7 @@ public class Rollit.RollHistory : Gtk.Box {
 
         var bottom_row = new Gtk.ActionBar ();
         bottom_row.pack_start (clear_button);
+        bottom_row.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         append (scroll_box);
         append (bottom_row);
