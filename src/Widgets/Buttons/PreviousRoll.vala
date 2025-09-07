@@ -51,7 +51,9 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
         button_layout.append (roll_amount);
         button_layout.append (copy_icon);
 
-        var copied_label = new Gtk.Label (_("Copied"));
+        var copied_label = new Gtk.Label (_("Copied")) {
+            halign = Gtk.Align.CENTER
+        };
 
         var stack = new Gtk.Stack () {
             transition_duration = Granite.TRANSITION_DURATION_OPEN,
