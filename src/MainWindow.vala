@@ -13,7 +13,7 @@ public class Rollit.MainWindow : Gtk.Window {
     private Rollit.RollHistory roll_history;
     private Gtk.HeaderBar header;
     private Gtk.Button roll_button;
-    private Gtk.Button history_button;
+    private Gtk.ToggleButton history_button;
     private Gtk.Box action_buttons;
     private Gtk.Box main_view;
     private Gtk.Paned hp;
@@ -77,10 +77,13 @@ public class Rollit.MainWindow : Gtk.Window {
         header.title_widget = label;
         header.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-        history_button = new Gtk.Button.from_icon_name ("document-open-recent") {
+        var icon = new Gtk.Image.from_icon_name ("document-open-recent");
+
+        history_button = new Gtk.ToggleButton () {
+            child = icon,
             tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H", "H"}, _("Roll history"))
         };
-
+        history_button.add_css_class (Granite.STYLE_CLASS_FLAT);
         header.pack_end (history_button);
 
         titlebar = header;
@@ -125,6 +128,12 @@ public class Rollit.MainWindow : Gtk.Window {
         main_view.append (action_buttons);
 
         roll_history = new Rollit.RollHistory ();
+
+        Application.settings.bind (
+            "show-history",
+            history_button, "active",
+            SettingsBindFlags.DEFAULT
+        );
 
         Application.settings.bind (
             "show-history",
