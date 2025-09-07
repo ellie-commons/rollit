@@ -151,10 +151,7 @@ public class Rollit.MainWindow : Gtk.Window {
 
         child = handle;
 
-        roll_history.visible = history_visible;
-
         roll_button.clicked.connect (on_roll);
-        history_button.clicked.connect (on_history_toggled);
     }
 
     private void restore_state () {
@@ -163,12 +160,6 @@ public class Rollit.MainWindow : Gtk.Window {
 
         default_width = rect.width;
         default_height = rect.height;
-
-        history_visible = Application.settings.get_boolean ("show-history");
-    }
-
-    public void on_history_toggled () {
-        Application.settings.set_boolean ("show-history", !roll_history.visible);
     }
 
     private void on_roll () {
