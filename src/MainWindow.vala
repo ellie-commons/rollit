@@ -126,8 +126,6 @@ public class Rollit.MainWindow : Gtk.Window {
         main_view.append (action_buttons);
 
         roll_history = new Rollit.RollHistory ();
-        roll_history.width_request = 70;
-
 
         hp = new Gtk.CenterBox ();
         hp.start_widget = main_view;

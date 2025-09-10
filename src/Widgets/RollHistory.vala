@@ -17,6 +17,8 @@ public class Rollit.RollHistory : Gtk.Box {
         orientation = Gtk.Orientation.VERTICAL;
         spacing = 0;
         vexpand = true;
+        width_request = 80;
+
         add_css_class ("sep");
 
         previous_rolls_box = new Gtk.ListBox () {
