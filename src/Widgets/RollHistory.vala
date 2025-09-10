@@ -17,7 +17,7 @@ public class Rollit.RollHistory : Gtk.Box {
         orientation = Gtk.Orientation.VERTICAL;
         spacing = 0;
         vexpand = true;
-        width_request = 80;
+        width_request = 50;
 
         add_css_class ("sep");
 

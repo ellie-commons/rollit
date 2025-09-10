@@ -29,7 +29,8 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
         ///TRANSLATORS: %s is replace by a dice number. Ex: d100.
         dicetype = new Gtk.Label (_("d%s: ").printf (dicetype_label)) {
             halign = Gtk.Align.START,
-            hexpand = true
+            hexpand = true,
+            sensitive = false
         };
 
         roll_amount = new Gtk.Label (roll_label) {
@@ -42,14 +43,13 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
             hexpand = true
         };
 
-        var button_layout = new Gtk.Box (HORIZONTAL, 12) {
+        var button_layout = new Gtk.CenterBox () {
             halign = Gtk.Align.FILL,
-            hexpand = true
+            hexpand = true,
+            start_widget = dicetype,
+            center_widget = roll_amount,
+            end_widget = copy_icon
         };
-
-        button_layout.append (dicetype);
-        button_layout.append (roll_amount);
-        button_layout.append (copy_icon);
 
         var copied_label = new Gtk.Label (_("Copied")) {
             halign = Gtk.Align.CENTER
