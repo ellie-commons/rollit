@@ -16,7 +16,7 @@ public class Rollit.MainWindow : Gtk.Window {
     private Gtk.ToggleButton history_button;
     private Gtk.Box action_buttons;
     private Gtk.Box main_view;
-    private Gtk.Paned hp;
+    private Gtk.CenterBox hp;
 
     private bool history_visible;
 
@@ -128,6 +128,29 @@ public class Rollit.MainWindow : Gtk.Window {
         main_view.append (action_buttons);
 
         roll_history = new Rollit.RollHistory ();
+        roll_history.width_request = 70;
+
+
+        hp = new Gtk.CenterBox ();
+        hp.start_widget = main_view;
+
+        var revealhist = new Gtk.Revealer () {
+            child = roll_history
+        };
+        revealhist.transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT;
+        revealhist.halign = Gtk.Align.END;
+        revealhist.hexpand = false;
+
+        hp.end_widget = revealhist;
+
+
+        var handle = new Gtk.WindowHandle () {
+            child = hp
+        };
+
+        child = handle;
+
+        roll_button.clicked.connect (on_roll);
 
         Application.settings.bind (
             "show-history",
@@ -137,21 +160,11 @@ public class Rollit.MainWindow : Gtk.Window {
 
         Application.settings.bind (
             "show-history",
-            roll_history, "visible",
+            revealhist, "reveal_child",
             SettingsBindFlags.DEFAULT
         );
 
-        hp = new Gtk.Paned (HORIZONTAL);
-        hp.start_child = main_view;
-        hp.end_child = roll_history;
 
-        var handle = new Gtk.WindowHandle () {
-            child = hp
-        };
-
-        child = handle;
-
-        roll_button.clicked.connect (on_roll);
     }
 
     private void restore_state () {
