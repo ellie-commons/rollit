@@ -18,8 +18,6 @@ public class Rollit.MainWindow : Gtk.Window {
     private Gtk.Box main_view;
     private Gtk.CenterBox hp;
 
-    private bool history_visible;
-
     public SimpleActionGroup actions { get; construct; }
 
     public const string ACTION_PREFIX = "app.";
