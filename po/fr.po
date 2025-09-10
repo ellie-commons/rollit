@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+"Language-Team: none\n"
+"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2020-02-13 20:30+0100\n"
+"POT-Creation-Date: 2025-09-10 17:30+0200\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 19:19+0200\n"
-"PO-Revision-Date: 2020-02-13 20:30+0100\n"
-"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
-"Language-Team: none\n"
-"Language: fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/Widgets/Menu.vala:29
 msgid "d4"
@@ -46,7 +46,8 @@ msgstr "Appuyez sur 0 pour choisir immédiatement le dé personnalisé"
 
 #. TRANSLATORS: %i represents a number: ex. d10 for a dice with 10 faces
 #. This will be displayed in a button with a menu to let people choose
-#: src/Widgets/Menu.vala:88 src/Widgets/Menu.vala:187
+#: src/Widgets/Menu.vala:88
+#: src/Widgets/Menu.vala:187
 #, c-format
 msgid "d%i"
 msgstr "d%i"
@@ -60,25 +61,25 @@ msgstr "Paramètres"
 msgid "Ready to Roll"
 msgstr "Prêt à lancer le dé"
 
-#: src/Widgets/RollHistory.vala:34
+#: src/Widgets/RollHistory.vala:33
 msgid "Clear"
 msgstr "Clair"
 
-#: src/Widgets/RollHistory.vala:45
+#: src/Widgets/RollHistory.vala:40
 msgid "Clear history"
 msgstr "Effacer l'historique"
 
 #. /TRANSLATORS: %s is replace by a dice number. Ex: d100.
-#: src/Widgets/Buttons/PreviousRoll.vala:31
+#: src/Widgets/Buttons/PreviousRoll.vala:30
 #, c-format
 msgid "d%s: "
 msgstr "d%s : "
 
-#: src/Widgets/Buttons/PreviousRoll.vala:55
+#: src/Widgets/Buttons/PreviousRoll.vala:54
 msgid "Copied"
 msgstr "Copié"
 
-#: src/Widgets/Buttons/PreviousRoll.vala:69
+#: src/Widgets/Buttons/PreviousRoll.vala:70
 msgid "Copy result to clipboard"
 msgstr "Copier le résultat dans le presse-papiers"
 
@@ -89,19 +90,21 @@ msgid "Press %s to immediately select this dice"
 msgstr "Appuyez sur %s pour sélectionner immédiatement ce dé"
 
 #: src/MainWindow.vala:59
+#: src/MainWindow.vala:74
 #, fuzzy
 msgid "Roll-It"
 msgstr "Lancer le dé"
 
-#: src/MainWindow.vala:81
+#: src/MainWindow.vala:84
 msgid "Roll history"
 msgstr "Historique des rouleaux"
 
-#: src/MainWindow.vala:90
+#: src/MainWindow.vala:93
+#: src/MainWindow.vala:95
 msgid "Roll"
 msgstr "Lancer le dé"
 
-#: src/MainWindow.vala:100
+#: src/MainWindow.vala:103
 msgid "Change dice"
 msgstr "Changer de dé"
 

@@ -76,7 +76,7 @@
     <release version="3.0.5" date="2025-08-26">
       <description>
         <ul>
-          <li>Modernizing the code a bit further</li>
+          <li>History and Clear button in line with other elementary OS apps</li>
         </ul>
       </description>
     </release>

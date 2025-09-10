@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 19:19+0200\n"
+"POT-Creation-Date: 2025-09-10 17:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,25 +64,25 @@ msgstr ""
 msgid "Ready to Roll"
 msgstr ""
 
-#: src/Widgets/RollHistory.vala:34
+#: src/Widgets/RollHistory.vala:33
 msgid "Clear"
 msgstr ""
 
-#: src/Widgets/RollHistory.vala:45
+#: src/Widgets/RollHistory.vala:40
 msgid "Clear history"
 msgstr ""
 
 #. /TRANSLATORS: %s is replace by a dice number. Ex: d100.
-#: src/Widgets/Buttons/PreviousRoll.vala:31
+#: src/Widgets/Buttons/PreviousRoll.vala:30
 #, c-format
 msgid "d%s: "
 msgstr ""
 
-#: src/Widgets/Buttons/PreviousRoll.vala:55
+#: src/Widgets/Buttons/PreviousRoll.vala:54
 msgid "Copied"
 msgstr ""
 
-#: src/Widgets/Buttons/PreviousRoll.vala:69
+#: src/Widgets/Buttons/PreviousRoll.vala:70
 msgid "Copy result to clipboard"
 msgstr ""
 
@@ -92,18 +92,18 @@ msgstr ""
 msgid "Press %s to immediately select this dice"
 msgstr ""
 
-#: src/MainWindow.vala:59
+#: src/MainWindow.vala:59 src/MainWindow.vala:74
 msgid "Roll-It"
 msgstr ""
 
-#: src/MainWindow.vala:81
+#: src/MainWindow.vala:84
 msgid "Roll history"
 msgstr ""
 
-#: src/MainWindow.vala:90
+#: src/MainWindow.vala:93 src/MainWindow.vala:95
 msgid "Roll"
 msgstr ""
 
-#: src/MainWindow.vala:100
+#: src/MainWindow.vala:103
 msgid "Change dice"
 msgstr ""

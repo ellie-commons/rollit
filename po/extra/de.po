@@ -1,22 +1,24 @@
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2025-09-10 17:31+0200\n"
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 19:19+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 
-#: data/rollit.metainfo.xml.in:8 data/rollit.desktop.in:3
+#: data/rollit.metainfo.xml.in:8
+#: data/rollit.desktop.in:3
 msgid "Roll-It"
 msgstr "Roll-It"
 
-#: data/rollit.metainfo.xml.in:9 data/rollit.desktop.in:5
+#: data/rollit.metainfo.xml.in:9
+#: data/rollit.desktop.in:6
 msgid "Simply roll a dice"
 msgstr "Einfach würfeln"
 
@@ -25,12 +27,8 @@ msgid "Simulate the results of rolling a die."
 msgstr "Simulieren Sie die Ergebnisse eines Würfelwurfs."
 
 #: data/rollit.metainfo.xml.in:13
-msgid ""
-"Quickly switch between several common die such as d6 or d20, or choose your "
-"own number of faces to roll against"
-msgstr ""
-"Wechseln Sie schnell zwischen verschiedenen gängigen Würfeln wie d6 oder "
-"d20, oder wählen Sie Ihre eigene Anzahl von Würfelflächen"
+msgid "Quickly switch between several common die such as d6 or d20, or choose your own number of faces to roll against"
+msgstr "Wechseln Sie schnell zwischen verschiedenen gängigen Würfeln wie d6 oder d20, oder wählen Sie Ihre eigene Anzahl von Würfelflächen"
 
 #: data/rollit.metainfo.xml.in:15
 msgid "Keyboard shortcuts:"
@@ -48,16 +46,11 @@ msgstr "Würfelmenü rufen mit Strg+D auf"
 
 #: data/rollit.metainfo.xml.in:19
 msgid "Use Ctrl + Number to select one of the preset option"
-msgstr ""
-"Verwenden Sie Strg + Zahl, um eine der voreingestellten Optionen auszuwählen"
+msgstr "Verwenden Sie Strg + Zahl, um eine der voreingestellten Optionen auszuwählen"
 
 #: data/rollit.metainfo.xml.in:20
-msgid ""
-"Hit Ctrl+0 to select the custom die option and focus the number entry when "
-"the menu is visible"
-msgstr ""
-"Drücken Sie Strg+0, um die benutzerdefinierte Würfeloption auszuwählen und "
-"die Zahleneingabe zu fokussieren, wenn das Menü sichtbar ist."
+msgid "Hit Ctrl+0 to select the custom die option and focus the number entry when the menu is visible"
+msgstr "Drücken Sie Strg+0, um die benutzerdefinierte Würfeloption auszuwählen und die Zahleneingabe zu fokussieren, wenn das Menü sichtbar ist."
 
 #: data/rollit.metainfo.xml.in:21
 msgid "Toggle the roll history pane with Ctrl+H"
@@ -68,13 +61,8 @@ msgid "Clear roll history with Ctrl+L"
 msgstr "Rollenverlauf löschen mit Strg+L"
 
 #: data/rollit.metainfo.xml.in:24
-msgid ""
-"This is an update of an older codebase of Chance, which is no longer "
-"directed toward elementary OS. Feel free to check it out on flathub!"
-msgstr ""
-"Dies ist ein Update einer älteren Codebasis von Chance, die nicht mehr auf "
-"elementary OS ausgerichtet ist. Fühlen Sie sich frei, es auf flathub zu "
-"überprüfen!"
+msgid "This is an update of an older codebase of Chance, which is no longer directed toward elementary OS. Feel free to check it out on flathub!"
+msgstr "Dies ist ein Update einer älteren Codebasis von Chance, die nicht mehr auf elementary OS ausgerichtet ist. Fühlen Sie sich frei, es auf flathub zu überprüfen!"
 
 #: data/rollit.metainfo.xml.in:28
 msgid "The main window of Roll-It. Roll dices and check history"
@@ -116,164 +104,151 @@ msgstr "Rnd"
 msgid "Num"
 msgstr "Ziffern"
 
-#: data/rollit.metainfo.xml.in:68
-msgid "elementary OS"
-msgstr "grundlegendes Betriebssystem"
-
 #: data/rollit.metainfo.xml.in:79
+msgid "History and Clear button in line with other elementary OS apps"
+msgstr "Verlaufs- und Löschtaste im Einklang mit anderen elementaren OS-Anwendungen"
+
+#: data/rollit.metainfo.xml.in:86
+msgid "Modernizing the code a bit further"
+msgstr "Den Code weiter modernisieren"
+
+#: data/rollit.metainfo.xml.in:87
+msgid "Localization: Dices in history localize properly"
+msgstr "Lokalisierung: Würfel in der Geschichte werden richtig lokalisiert"
+
+#: data/rollit.metainfo.xml.in:93
+msgid "Quickfix"
+msgstr "Quickfix"
+
+#: data/rollit.metainfo.xml.in:98
+msgid "Quick correction: I forgot the screenshots"
+msgstr "Schnelle Korrektur: Ich habe die Bildschirmfotos vergessen"
+
+#: data/rollit.metainfo.xml.in:103
+msgid "Quick correction: fix broken label"
+msgstr "Schnellkorrektur: Fehlerhaftes Etikett reparieren"
+
+#: data/rollit.metainfo.xml.in:108
 msgid "3.0.0 Revival"
 msgstr "3.0.0 Wiederbelebung"
 
-#: data/rollit.metainfo.xml.in:81
+#: data/rollit.metainfo.xml.in:110
 #, fuzzy
-msgid ""
-"Updated to GTK4 with the permission of its original author @zelikos. Thank "
-"you!"
-msgstr ""
-"Aktualisiert auf GTK4 mit der Erlaubnis des ursprünglichen Autors @zelikos"
+msgid "Updated to GTK4 with the permission of its original author @zelikos. Thank you!"
+msgstr "Aktualisiert auf GTK4 mit der Erlaubnis des ursprünglichen Autors @zelikos"
 
-#: data/rollit.metainfo.xml.in:82
+#: data/rollit.metainfo.xml.in:111
 msgid "Display dice type in history so you remember what you rolled it with"
-msgstr ""
+msgstr "Anzeige des Würfeltyps in der Historie, damit Sie wissen, womit Sie gewürfelt haben"
 
-#: data/rollit.metainfo.xml.in:83
+#: data/rollit.metainfo.xml.in:112
 #, fuzzy
-msgid ""
-"More dice options, because i need dices when GMing and cant be arsed to hit "
-"Ctrl"
+msgid "More dice options, because i need dices when GMing and cant be arsed to hit Ctrl"
 msgstr "Mehr Würfeloptionen, denn ich brauche Würfel beim GMing"
 
-#: data/rollit.metainfo.xml.in:84
+#: data/rollit.metainfo.xml.in:113
 #, fuzzy
-msgid ""
-"More accessible accels for the TTRPG GMs who use their laptop while GMing"
+msgid "More accessible accels for the TTRPG GMs who use their laptop while GMing"
 msgstr "Besser zugängliche Akkus für die GMs"
 
-#: data/rollit.metainfo.xml.in:85
+#: data/rollit.metainfo.xml.in:114
 msgid "Custom can go HIGHER. UP TO 1000. Roll MASSIVE DICES"
-msgstr ""
+msgstr "Custom kann HÖHER gehen. BIS ZU 1000. MASSIVE DICES rollen"
 
-#: data/rollit.metainfo.xml.in:86
+#: data/rollit.metainfo.xml.in:115
 #, fuzzy
 msgid "Now in German"
 msgstr "Jetzt auf Deutsch"
 
-#: data/rollit.metainfo.xml.in:92
-msgid "Backend Updates"
-msgstr "Backend-Updates"
-
-#: data/rollit.metainfo.xml.in:94
-msgid "Updated category information for better discoverability"
-msgstr "Aktualisierte Kategorie-Informationen für bessere Auffindbarkeit"
-
-#: data/rollit.metainfo.xml.in:95
-msgid "Stricter sandboxing"
-msgstr "Strengeres Sandboxing"
-
-#: data/rollit.metainfo.xml.in:96
-msgid "Bump platform to 6.1"
-msgstr "Plattform auf 6.1 erhöhen"
-
-#: data/rollit.metainfo.xml.in:102
-msgid "elementary OS 6 Update!"
-msgstr "elementares OS 6 Update!"
-
-#: data/rollit.metainfo.xml.in:104
-msgid "Respects new dark style preference"
-msgstr "Berücksichtigt neue dunkle Stilvorlieben"
-
-#: data/rollit.metainfo.xml.in:105
-msgid "Headerbar and 'Roll' button follow the system accent color"
-msgstr ""
-"Kopfleiste und Schaltfläche \"Rollen\" folgen der Akzentfarbe des Systems"
-
-#: data/rollit.metainfo.xml.in:106
-msgid "Dice menu now features keyboard shortcut labels"
-msgstr "Das Würfelmenü enthält jetzt Tastaturkürzel"
-
-#: data/rollit.metainfo.xml.in:107
-msgid "Various refinements to the UI and the backend"
-msgstr "Verschiedene Verfeinerungen an der Benutzeroberfläche und dem Backend"
-
-#: data/rollit.metainfo.xml.in:113
-msgid "History and Keyboard Shortcuts"
-msgstr "Verlauf und Tastaturkürzel"
-
-#: data/rollit.metainfo.xml.in:115
-msgid "Previous rolls are now stored in a new roll history pane"
-msgstr ""
-"Frühere Rollen werden jetzt in einem neuen Rollenverlaufsfenster gespeichert."
-
-#: data/rollit.metainfo.xml.in:116
-msgid "Many keyboard shortcuts have been added"
-msgstr "Viele Tastaturkürzel wurden hinzugefügt"
-
-#: data/rollit.metainfo.xml.in:117
-msgid ""
-"Custom die value is now saved regardless of the last-selected die option"
-msgstr ""
-"Benutzerdefinierter Würfelwert wird nun unabhängig von der zuletzt gewählten "
-"Würfeloption gespeichert"
-
-#: data/rollit.metainfo.xml.in:118
-msgid "More code cleanups and refactoring on the backend"
-msgstr "Weitere Codebereinigungen und Refactoring im Backend"
-
-#: data/rollit.metainfo.xml.in:124
-msgid "Visual Tweaks and Backend Stuff"
-msgstr "Visuelle Anpassungen und Backend-Sachen"
-
-#: data/rollit.metainfo.xml.in:126
-msgid "Fixed spacing of the combo-button and number display"
-msgstr "Abstand der Kombinationsschaltflächen und der Zahlenanzeige korrigiert"
-
-#: data/rollit.metainfo.xml.in:127
-msgid "Header styling adjusted"
-msgstr "Header-Styling angepasst"
-
-#: data/rollit.metainfo.xml.in:128
-msgid "Prep for elementary OS 6 support"
-msgstr "Vorbereitung auf elementare OS 6-Unterstützung"
-
-#: data/rollit.metainfo.xml.in:129
-msgid "Code cleanups"
-msgstr "Codebereinigungen"
-
-#: data/rollit.metainfo.xml.in:135
-msgid "Implemented dice presets"
-msgstr "Implementierte Würfelvoreinstellungen"
-
-#: data/rollit.metainfo.xml.in:140
-msgid "Remembers previously-selected number for highest possible roll"
-msgstr "Merkt sich die zuvor gewählte Zahl für den höchstmöglichen Wurf"
-
-#: data/rollit.metainfo.xml.in:146
-msgid "Added release info to AppData"
-msgstr "Versionsinformationen zu AppData hinzugefügt"
-
-#: data/rollit.metainfo.xml.in:147
-msgid "Rewrote app description to be more concise"
-msgstr "Die Beschreibung der App wurde überarbeitet und prägnanter gestaltet."
-
-#: data/rollit.metainfo.xml.in:148
-msgid "French translations by @NathanBnm"
-msgstr "Französische Übersetzungen von @NathanBnm"
-
-#: data/rollit.metainfo.xml.in:154
-msgid "AppData fixes"
-msgstr "AppData Korrekturen"
-
-#: data/rollit.metainfo.xml.in:159
-msgid "Initial release"
-msgstr "Erste Veröffentlichung"
-
-#: data/rollit.desktop.in:4
-msgid "Dice Roller App"
+#: data/rollit.desktop.in:5
+#, fuzzy
+msgid "Dice Roller"
 msgstr "Würfelroller App"
 
 #: data/rollit.desktop.in:11
 msgid "Die;Dice;Roll;Random;Number;Rnd;Num;"
 msgstr "Würfel;Würfel;Wurf;Zufällig;Zahl;Rnd;Num;"
+
+#~ msgid "elementary OS"
+#~ msgstr "grundlegendes Betriebssystem"
+
+#~ msgid "Backend Updates"
+#~ msgstr "Backend-Updates"
+
+#~ msgid "Updated category information for better discoverability"
+#~ msgstr "Aktualisierte Kategorie-Informationen für bessere Auffindbarkeit"
+
+#~ msgid "Stricter sandboxing"
+#~ msgstr "Strengeres Sandboxing"
+
+#~ msgid "Bump platform to 6.1"
+#~ msgstr "Plattform auf 6.1 erhöhen"
+
+#~ msgid "elementary OS 6 Update!"
+#~ msgstr "elementares OS 6 Update!"
+
+#~ msgid "Respects new dark style preference"
+#~ msgstr "Berücksichtigt neue dunkle Stilvorlieben"
+
+#~ msgid "Headerbar and 'Roll' button follow the system accent color"
+#~ msgstr "Kopfleiste und Schaltfläche \"Rollen\" folgen der Akzentfarbe des Systems"
+
+#~ msgid "Dice menu now features keyboard shortcut labels"
+#~ msgstr "Das Würfelmenü enthält jetzt Tastaturkürzel"
+
+#~ msgid "Various refinements to the UI and the backend"
+#~ msgstr "Verschiedene Verfeinerungen an der Benutzeroberfläche und dem Backend"
+
+#~ msgid "History and Keyboard Shortcuts"
+#~ msgstr "Verlauf und Tastaturkürzel"
+
+#~ msgid "Previous rolls are now stored in a new roll history pane"
+#~ msgstr "Frühere Rollen werden jetzt in einem neuen Rollenverlaufsfenster gespeichert."
+
+#~ msgid "Many keyboard shortcuts have been added"
+#~ msgstr "Viele Tastaturkürzel wurden hinzugefügt"
+
+#~ msgid "Custom die value is now saved regardless of the last-selected die option"
+#~ msgstr "Benutzerdefinierter Würfelwert wird nun unabhängig von der zuletzt gewählten Würfeloption gespeichert"
+
+#~ msgid "More code cleanups and refactoring on the backend"
+#~ msgstr "Weitere Codebereinigungen und Refactoring im Backend"
+
+#~ msgid "Visual Tweaks and Backend Stuff"
+#~ msgstr "Visuelle Anpassungen und Backend-Sachen"
+
+#~ msgid "Fixed spacing of the combo-button and number display"
+#~ msgstr "Abstand der Kombinationsschaltflächen und der Zahlenanzeige korrigiert"
+
+#~ msgid "Header styling adjusted"
+#~ msgstr "Header-Styling angepasst"
+
+#~ msgid "Prep for elementary OS 6 support"
+#~ msgstr "Vorbereitung auf elementare OS 6-Unterstützung"
+
+#~ msgid "Code cleanups"
+#~ msgstr "Codebereinigungen"
+
+#~ msgid "Implemented dice presets"
+#~ msgstr "Implementierte Würfelvoreinstellungen"
+
+#~ msgid "Remembers previously-selected number for highest possible roll"
+#~ msgstr "Merkt sich die zuvor gewählte Zahl für den höchstmöglichen Wurf"
+
+#~ msgid "Added release info to AppData"
+#~ msgstr "Versionsinformationen zu AppData hinzugefügt"
+
+#~ msgid "Rewrote app description to be more concise"
+#~ msgstr "Die Beschreibung der App wurde überarbeitet und prägnanter gestaltet."
+
+#~ msgid "French translations by @NathanBnm"
+#~ msgstr "Französische Übersetzungen von @NathanBnm"
+
+#~ msgid "AppData fixes"
+#~ msgstr "AppData Korrekturen"
+
+#~ msgid "Initial release"
+#~ msgstr "Erste Veröffentlichung"
 
 #~ msgid "Roll the dice"
 #~ msgstr "Würfeln Sie"
