@@ -11,6 +11,7 @@ public class Rollit.RollHistory : Gtk.Box {
     private Gtk.ScrolledWindow scroll_box;
     private Gtk.ListBox previous_rolls_box;
     private Gtk.Button clear_button;
+    private Gtk.Stack stack;
 
     construct {
         orientation = Gtk.Orientation.VERTICAL;
@@ -20,6 +21,14 @@ public class Rollit.RollHistory : Gtk.Box {
         previous_rolls_box = new Gtk.ListBox () {
             activate_on_single_click = true,
             visible = true
+        };
+
+        stack = new Gtk.Stack ();
+        stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+
+        var placeholder = new Granite.Placeholder (_("Nothing to show yet!")) {
+            icon = new ThemedIcon ("folder-recent-symbolic"),
+            description = "Roll a dice, it will appear here"
         };
 
         scroll_box = new Gtk.ScrolledWindow () {
@@ -47,7 +56,12 @@ public class Rollit.RollHistory : Gtk.Box {
         bottom_row.pack_start (clear_button);
         bottom_row.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-        append (scroll_box);
+
+        stack.add_named (scroll_box, "history");
+        stack.add_named (placeholder, "placeholder");
+        stack.visible_child_name = "placeholder";
+
+        append (stack);
         append (bottom_row);
 
         clear_button.clicked.connect (clear_rolls);
@@ -56,6 +70,7 @@ public class Rollit.RollHistory : Gtk.Box {
     }
 
     public void clear_rolls () {
+        stack.visible_child_name = "placeholder";
         previous_rolls_box.remove_all ();
 
         foreach (PreviousRoll item in previous_rolls_list) {
@@ -68,6 +83,7 @@ public class Rollit.RollHistory : Gtk.Box {
 
     public void add_roll (int roll, int maxroll) {
         var new_roll = new Rollit.PreviousRoll (roll, maxroll);
+        stack.visible_child_name = "history";
 
         previous_rolls_list.append (new_roll);
         previous_rolls_box.prepend (new_roll);
