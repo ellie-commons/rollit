@@ -96,6 +96,7 @@ public class Rollit.RollHistory : Gtk.Box {
         previous_rolls_list.append (new_roll);
         previous_rolls_box.prepend (new_roll);
         previous_rolls_box.show ();
+        new_roll.swoop (true);
 
         if (clear_button.sensitive == false) {
             clear_button.sensitive = true;

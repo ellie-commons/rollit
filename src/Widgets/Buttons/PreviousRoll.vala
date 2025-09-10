@@ -15,6 +15,7 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
 
     public Gtk.Label roll_amount { get; set; }
     private Gtk.Label dicetype { get; set; }
+    private Gtk.Revealer revealer;
 
     public signal void copied ();
 
@@ -28,20 +29,11 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
     construct {
         ///TRANSLATORS: %s is replace by a dice number. Ex: d100.
         dicetype = new Gtk.Label (_("d%s: ").printf (dicetype_label)) {
-            halign = Gtk.Align.START,
-            hexpand = true,
             sensitive = false
         };
 
-        roll_amount = new Gtk.Label (roll_label) {
-            halign = Gtk.Align.CENTER,
-            hexpand = true
-        };
-
-        copy_icon = new Gtk.Image.from_icon_name ("edit-copy-symbolic") {
-            halign = Gtk.Align.END,
-            hexpand = true
-        };
+        roll_amount = new Gtk.Label (roll_label);
+        copy_icon = new Gtk.Image.from_icon_name ("edit-copy-symbolic");
 
         var button_layout = new Gtk.CenterBox () {
             halign = Gtk.Align.FILL,
@@ -52,7 +44,8 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
         };
 
         var copied_label = new Gtk.Label (_("Copied")) {
-            halign = Gtk.Align.CENTER
+            halign = Gtk.Align.CENTER,
+            hexpand = true
         };
 
         var stack = new Gtk.Stack () {
@@ -72,7 +65,13 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
 
         button.child = stack;
 
-        child = button;
+        revealer = new Gtk.Revealer () {
+            child = button
+        };
+        revealer.reveal_child = false;
+        revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_DOWN;
+
+        child = revealer;
 
         button.clicked.connect ( () => {
             uint duration = 1000;
@@ -95,5 +94,9 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
         var clipboard = Gdk.Display.get_default ().get_clipboard ();
         clipboard.set_text (roll);
         copied ();
+    }
+
+    public void swoop (bool is_swoop) {
+        revealer.reveal_child = is_swoop;
     }
  }
