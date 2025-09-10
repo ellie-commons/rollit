@@ -26,7 +26,7 @@ public class Rollit.Application : Gtk.Application {
     public Application () {
         Object (
             application_id: "io.github.ellie_commons.rollit",
-            flags: ApplicationFlags.FLAGS_NONE
+            flags: ApplicationFlags.DEFAULT_FLAGS
         );
     }
 
