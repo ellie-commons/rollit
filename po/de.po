@@ -62,11 +62,11 @@ msgstr "Bereit zum Würfeln"
 
 #: src/Widgets/RollHistory.vala:33
 msgid "Clear"
-msgstr "Löschen"
+msgstr "Leeren"
 
 #: src/Widgets/RollHistory.vala:40
 msgid "Clear history"
-msgstr "Verlauf löschen"
+msgstr "Verlauf leeren"
 
 #. /TRANSLATORS: %s is replace by a dice number. Ex: d100.
 #: src/Widgets/Buttons/PreviousRoll.vala:30
