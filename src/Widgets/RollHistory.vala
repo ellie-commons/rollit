@@ -79,8 +79,8 @@ public class Rollit.RollHistory : Gtk.Box {
 
     public void clear_rolls () {
         //stack.visible_child_name = "placeholder";
-        previous_rolls_box.remove_all ();
 
+        previous_rolls_box.remove_all ();
         foreach (PreviousRoll item in previous_rolls_list) {
             previous_rolls_list.remove (item);
             item.destroy ();
@@ -96,7 +96,7 @@ public class Rollit.RollHistory : Gtk.Box {
         previous_rolls_list.append (new_roll);
         previous_rolls_box.prepend (new_roll);
         previous_rolls_box.show ();
-        new_roll.swoop (true);
+        new_roll.swoop ();
 
         if (clear_button.sensitive == false) {
             clear_button.sensitive = true;

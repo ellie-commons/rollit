@@ -96,7 +96,7 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
         copied ();
     }
 
-    public void swoop (bool is_swoop) {
-        revealer.reveal_child = is_swoop;
+    public void swoop () {
+        revealer.reveal_child = true;
     }
  }
