@@ -45,6 +45,19 @@ public class Rollit.Application : Gtk.Application {
         base.startup ();
         Granite.init ();
 
+        var gtk_settings = Gtk.Settings.get_default ();
+        var granite_settings = Granite.Settings.get_default ();
+
+        gtk_settings.gtk_application_prefer_dark_theme = (
+	            granite_settings.prefers_color_scheme == DARK
+            );
+	
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = (
+                    granite_settings.prefers_color_scheme == DARK
+                );
+        });
+
         var quit_action = new SimpleAction ("quit", null);
         add_action (quit_action);
         set_accels_for_action ("app.quit", {"<Control>q"});
@@ -104,19 +117,6 @@ public class Rollit.Application : Gtk.Application {
     }
 
     protected override void activate () {
-        var gtk_settings = Gtk.Settings.get_default ();
-        var granite_settings = Granite.Settings.get_default ();
-
-
-        gtk_settings.gtk_application_prefer_dark_theme = (
-                                                            granite_settings.prefers_color_scheme == DARK
-        );
-
-        granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = (
-                                                                granite_settings.prefers_color_scheme == DARK
-            );
-        });
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/io/github/ellie_commons/rollit/Application.css");
@@ -137,7 +137,6 @@ public class Rollit.Application : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        var app = new Application ();
-        return app.run (args);
+        return new Application ().run (args);
     }
 }
