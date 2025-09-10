@@ -30,7 +30,7 @@ public class Rollit.RollHistory : Gtk.Box {
         };
         scroll_box.child = previous_rolls_box;
 
-        var clear_button_label = new Gtk.Label (_("Clear Button"));
+        var clear_button_label = new Gtk.Label (_("Clear"));
         var clear_button_box = new Gtk.Box (HORIZONTAL, 0);
         clear_button_box.append (new Gtk.Image.from_icon_name ("edit-clear-all-symbolic"));
         clear_button_box.append (clear_button_label);
