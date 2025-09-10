@@ -22,3 +22,8 @@
     font-size: 7em;
     font-weight: 600;
 }
+
+/* Based on paned separator in granite*/
+.sep {
+border-left: solid 1px rgba(1,1,1,0.1);
+}
