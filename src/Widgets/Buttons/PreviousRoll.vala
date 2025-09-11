@@ -33,7 +33,9 @@ public class Rollit.PreviousRoll : Gtk.ListBoxRow {
         };
 
         roll_amount = new Gtk.Label (roll_label);
-        copy_icon = new Gtk.Image.from_icon_name ("edit-copy-symbolic");
+        copy_icon = new Gtk.Image.from_icon_name ("edit-copy-symbolic") {
+            sensitive = false
+        };
 
         var button_layout = new Gtk.CenterBox () {
             halign = Gtk.Align.FILL,

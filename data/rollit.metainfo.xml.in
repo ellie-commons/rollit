@@ -76,8 +76,10 @@
     <release version="3.0.5" date="2025-08-26">
       <description>
         <ul>
-          <li>History and Clear button in line with other elementary OS apps</li>
+          <li>History and Clear button more in line with other elementary OS apps</li>
           <li>Dice history panel is no longer resizable, but in exchange, has a neat swoop animation</li>
+          <li>Added a placeholder for when the history is empty</li>
+          <li>Fade a bit the dice type and copied icon to reduce visual noise</li>
         </ul>
       </description>
     </release>
