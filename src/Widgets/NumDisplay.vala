@@ -11,25 +11,22 @@ public class Rollit.NumDisplay : Gtk.Box {
     private Gtk.Stack stack;
 
     construct {
-
         orientation = Gtk.Orientation.VERTICAL;
         spacing = 0;
+        hexpand = true;
+        halign = Gtk.Align.FILL;
+        vexpand = true;
+        valign = Gtk.Align.FILL;
 
         stack = new Gtk.Stack () {
             transition_type = Gtk.StackTransitionType.SLIDE_UP,
             transition_duration = 200,
         };
 
-        hexpand = true;
-        halign = Gtk.Align.FILL;
-        vexpand = true;
-        valign = Gtk.Align.FILL;
-
         roll_result = new Gtk.Label (null);
         roll_result.add_css_class ("result-label");
 
-        var welcome = new Gtk.Label (null);
-        welcome.label = _("Ready to Roll");
+        var welcome = new Gtk.Label (_("Ready to Roll"));
         welcome.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
 
         var blank = new Gtk.Label (null);
