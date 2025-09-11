@@ -73,7 +73,7 @@
     </branding>
 
   <releases>
-    <release version="3.0.5" date="2025-08-26">
+    <release version="3.0.5" date="2025-09-11">
       <description>
         <ul>
           <li>History and Clear button more in line with other elementary OS apps</li>
