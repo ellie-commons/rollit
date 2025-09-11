@@ -7,7 +7,7 @@ msgstr ""
 "Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
 "MIME-Version: 1.0\n"
 "PO-Revision-Date: 2020-02-13 20:30+0100\n"
-"POT-Creation-Date: 2025-09-10 17:31+0200\n"
+"POT-Creation-Date: 2025-09-11 18:55+0200\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
@@ -106,57 +106,70 @@ msgid "Num"
 msgstr "Numérique"
 
 #: data/rollit.metainfo.xml.in:79
-msgid "History and Clear button in line with other elementary OS apps"
+#, fuzzy
+msgid "History and Clear button more in line with other elementary OS apps"
 msgstr "Historique et bouton \"Effacer\" alignés sur les autres applications de l'OS élémentaire"
 
-#: data/rollit.metainfo.xml.in:86
+#: data/rollit.metainfo.xml.in:80
+msgid "Dice history panel is no longer resizable, but in exchange, has a neat swoop animation"
+msgstr "Le panneau d'historique des dés n'est plus redimensionnable, mais en échange, il dispose d'une jolie animation de descente."
+
+#: data/rollit.metainfo.xml.in:81
+msgid "Added a placeholder for when the history is empty"
+msgstr "Ajout d'un espace réservé lorsque l'historique est vide"
+
+#: data/rollit.metainfo.xml.in:82
+msgid "Fade a bit the dice type and copied icon to reduce visual noise"
+msgstr "L'icône du type de dé et de la copie s'estompe un peu pour réduire le bruit visuel."
+
+#: data/rollit.metainfo.xml.in:89
 msgid "Modernizing the code a bit further"
 msgstr "Moderniser un peu plus le code"
 
-#: data/rollit.metainfo.xml.in:87
+#: data/rollit.metainfo.xml.in:90
 msgid "Localization: Dices in history localize properly"
 msgstr "Localisation : Les dés de l'histoire sont correctement localisés"
 
-#: data/rollit.metainfo.xml.in:93
+#: data/rollit.metainfo.xml.in:96
 msgid "Quickfix"
 msgstr "Quickfix"
 
-#: data/rollit.metainfo.xml.in:98
+#: data/rollit.metainfo.xml.in:101
 msgid "Quick correction: I forgot the screenshots"
 msgstr "Correction rapide : J'ai oublié les captures d'écran"
 
-#: data/rollit.metainfo.xml.in:103
+#: data/rollit.metainfo.xml.in:106
 msgid "Quick correction: fix broken label"
 msgstr "Correction rapide : réparer l'étiquette cassée"
 
-#: data/rollit.metainfo.xml.in:108
+#: data/rollit.metainfo.xml.in:111
 msgid "3.0.0 Revival"
 msgstr "3.0.0 Revival"
 
-#: data/rollit.metainfo.xml.in:110
+#: data/rollit.metainfo.xml.in:113
 #, fuzzy
 msgid "Updated to GTK4 with the permission of its original author @zelikos. Thank you!"
 msgstr "Mis à jour pour GTK4 avec la permission de son auteur original @zelikos"
 
-#: data/rollit.metainfo.xml.in:111
+#: data/rollit.metainfo.xml.in:114
 msgid "Display dice type in history so you remember what you rolled it with"
 msgstr "Affichage du type de dé dans l'historique afin que vous vous souveniez avec quoi vous l'avez lancé"
 
-#: data/rollit.metainfo.xml.in:112
+#: data/rollit.metainfo.xml.in:115
 #, fuzzy
 msgid "More dice options, because i need dices when GMing and cant be arsed to hit Ctrl"
 msgstr "Plus d'options de dés, parce que j'ai besoin de dés quand je joue."
 
-#: data/rollit.metainfo.xml.in:113
+#: data/rollit.metainfo.xml.in:116
 #, fuzzy
 msgid "More accessible accels for the TTRPG GMs who use their laptop while GMing"
 msgstr "Des accels plus accessibles pour les GM"
 
-#: data/rollit.metainfo.xml.in:114
+#: data/rollit.metainfo.xml.in:117
 msgid "Custom can go HIGHER. UP TO 1000. Roll MASSIVE DICES"
 msgstr "La personnalisation peut aller PLUS HAUT. JUSQU'À 1000. Rouleau MASSIVE DICES"
 
-#: data/rollit.metainfo.xml.in:115
+#: data/rollit.metainfo.xml.in:118
 #, fuzzy
 msgid "Now in German"
 msgstr "Maintenant en allemand"

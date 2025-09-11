@@ -7,7 +7,7 @@ msgstr ""
 "Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
 "MIME-Version: 1.0\n"
 "PO-Revision-Date: 2020-02-13 20:30+0100\n"
-"POT-Creation-Date: 2025-09-10 17:30+0200\n"
+"POT-Creation-Date: 2025-09-11 18:55+0200\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
@@ -61,25 +61,34 @@ msgstr "Paramètres"
 msgid "Ready to Roll"
 msgstr "Prêt à lancer le dé"
 
-#: src/Widgets/RollHistory.vala:33
+#. var placeholder = new Granite.Placeholder (_("Nothing to show yet!")) {
+#. icon = new ThemedIcon ("folder-recent-symbolic"),
+#. description = "Roll a dice, it will appear here",
+#. hexpand = false
+#. };
+#: src/Widgets/RollHistory.vala:38
+msgid "Empty!"
+msgstr "Vide !"
+
+#: src/Widgets/RollHistory.vala:53
 msgid "Clear"
 msgstr "Clair"
 
-#: src/Widgets/RollHistory.vala:40
+#: src/Widgets/RollHistory.vala:60
 msgid "Clear history"
 msgstr "Effacer l'historique"
 
 #. /TRANSLATORS: %s is replace by a dice number. Ex: d100.
-#: src/Widgets/Buttons/PreviousRoll.vala:30
+#: src/Widgets/Buttons/PreviousRoll.vala:31
 #, c-format
 msgid "d%s: "
 msgstr "d%s : "
 
-#: src/Widgets/Buttons/PreviousRoll.vala:54
+#: src/Widgets/Buttons/PreviousRoll.vala:48
 msgid "Copied"
 msgstr "Copié"
 
-#: src/Widgets/Buttons/PreviousRoll.vala:70
+#: src/Widgets/Buttons/PreviousRoll.vala:65
 msgid "Copy result to clipboard"
 msgstr "Copier le résultat dans le presse-papiers"
 
@@ -89,22 +98,22 @@ msgstr "Copier le résultat dans le presse-papiers"
 msgid "Press %s to immediately select this dice"
 msgstr "Appuyez sur %s pour sélectionner immédiatement ce dé"
 
-#: src/MainWindow.vala:59
-#: src/MainWindow.vala:74
+#: src/MainWindow.vala:57
+#: src/MainWindow.vala:72
 #, fuzzy
 msgid "Roll-It"
 msgstr "Lancer le dé"
 
-#: src/MainWindow.vala:84
+#: src/MainWindow.vala:82
 msgid "Roll history"
 msgstr "Historique des rouleaux"
 
+#: src/MainWindow.vala:91
 #: src/MainWindow.vala:93
-#: src/MainWindow.vala:95
 msgid "Roll"
 msgstr "Lancer le dé"
 
-#: src/MainWindow.vala:103
+#: src/MainWindow.vala:101
 msgid "Change dice"
 msgstr "Changer de dé"
 
