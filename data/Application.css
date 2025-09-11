@@ -25,6 +25,6 @@
 
 /* Based on paned separator in granite*/
 .sep {
-    border-left: solid 1px rgba(1,1,1,0.1);
+    border-left: solid 1px rgba(1,1,1,0.3);
     /* border-top: solid 1px rgba(1,1,1,0.1); */
 }
