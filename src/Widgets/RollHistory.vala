@@ -35,9 +35,10 @@ public class Rollit.RollHistory : Gtk.Box {
             hexpand = false
         };  */
 
-/*          var placeholder = new Gtk.Label (null);
-        placeholder.label = _("Nothing to show yet!");
-        placeholder.add_css_class (Granite.STYLE_CLASS_H2_LABEL);  */
+        var placeholder = new Gtk.Label (_("Empty!"));
+        placeholder.hexpand = false;
+        placeholder.halign = Gtk.Align.CENTER;
+        placeholder.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
 
         scroll_box = new Gtk.ScrolledWindow () {
             hscrollbar_policy = NEVER,
@@ -65,11 +66,11 @@ public class Rollit.RollHistory : Gtk.Box {
         bottom_row.add_css_class (Granite.STYLE_CLASS_FLAT);
 
 
-        //stack.add_named (scroll_box, "history");
-        //stack.add_named (placeholder, "placeholder");
-        //stack.visible_child_name = "placeholder";
+        stack.add_named (scroll_box, "history");
+        stack.add_named (placeholder, "placeholder");
+        stack.visible_child_name = "placeholder";
 
-        append (scroll_box);
+        append (stack);
         append (bottom_row);
 
         clear_button.clicked.connect (clear_rolls);
@@ -78,7 +79,7 @@ public class Rollit.RollHistory : Gtk.Box {
     }
 
     public void clear_rolls () {
-        //stack.visible_child_name = "placeholder";
+        stack.visible_child_name = "placeholder";
 
         previous_rolls_box.remove_all ();
         foreach (PreviousRoll item in previous_rolls_list) {
@@ -91,7 +92,7 @@ public class Rollit.RollHistory : Gtk.Box {
 
     public void add_roll (int roll, int maxroll) {
         var new_roll = new Rollit.PreviousRoll (roll, maxroll);
-        //stack.visible_child_name = "history";
+        stack.visible_child_name = "history";
 
         previous_rolls_list.append (new_roll);
         previous_rolls_box.prepend (new_roll);
