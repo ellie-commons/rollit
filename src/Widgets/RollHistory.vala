@@ -35,10 +35,12 @@ public class Rollit.RollHistory : Gtk.Box {
             hexpand = false
         };  */
 
-        var placeholder = new Gtk.Label (_("Empty!"));
-        placeholder.hexpand = false;
-        placeholder.halign = Gtk.Align.CENTER;
+        var placeholder = new Gtk.Label (_("Empty!")) {
+            hexpand = false,
+            halign = Gtk.Align.CENTER
+        };
         placeholder.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
+        placeholder.sensitive = false;
 
         scroll_box = new Gtk.ScrolledWindow () {
             hscrollbar_policy = NEVER,
