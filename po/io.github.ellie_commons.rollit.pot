@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.ellie_commons.rollit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 18:55+0200\n"
+"POT-Creation-Date: 2025-09-12 13:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Dice settings"
 msgstr ""
 
-#: src/Widgets/NumDisplay.vala:32
+#: src/Widgets/NumDisplay.vala:29
 msgid "Ready to Roll"
 msgstr ""
 

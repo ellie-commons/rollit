@@ -73,8 +73,9 @@
     </branding>
 
   <releases>
-    <release version="3.0.5" date="2025-09-11">
+    <release version="3.0.5" date="2025-09-12">
       <description>
+        <p>3.0.5 Mostly UI updates!</p>
         <ul>
           <li>History and Clear button more in line with other elementary OS apps</li>
           <li>Dice history panel is no longer resizable, but in exchange, has a neat swoop animation</li>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 18:55+0200\n"
+"POT-Creation-Date: 2025-09-12 13:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,74 +111,78 @@ msgstr ""
 msgid "Num"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:79
-msgid "History and Clear button more in line with other elementary OS apps"
+#: data/rollit.metainfo.xml.in:78
+msgid "3.0.5 Mostly UI updates!"
 msgstr ""
 
 #: data/rollit.metainfo.xml.in:80
+msgid "History and Clear button more in line with other elementary OS apps"
+msgstr ""
+
+#: data/rollit.metainfo.xml.in:81
 msgid ""
 "Dice history panel is no longer resizable, but in exchange, has a neat swoop "
 "animation"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:81
+#: data/rollit.metainfo.xml.in:82
 msgid "Added a placeholder for when the history is empty"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:82
+#: data/rollit.metainfo.xml.in:83
 msgid "Fade a bit the dice type and copied icon to reduce visual noise"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:89
+#: data/rollit.metainfo.xml.in:90
 msgid "Modernizing the code a bit further"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:90
+#: data/rollit.metainfo.xml.in:91
 msgid "Localization: Dices in history localize properly"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:96
+#: data/rollit.metainfo.xml.in:97
 msgid "Quickfix"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:101
+#: data/rollit.metainfo.xml.in:102
 msgid "Quick correction: I forgot the screenshots"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:106
+#: data/rollit.metainfo.xml.in:107
 msgid "Quick correction: fix broken label"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:111
+#: data/rollit.metainfo.xml.in:112
 msgid "3.0.0 Revival"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:113
+#: data/rollit.metainfo.xml.in:114
 msgid ""
 "Updated to GTK4 with the permission of its original author @zelikos. Thank "
 "you!"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:114
+#: data/rollit.metainfo.xml.in:115
 msgid "Display dice type in history so you remember what you rolled it with"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:115
+#: data/rollit.metainfo.xml.in:116
 msgid ""
 "More dice options, because i need dices when GMing and cant be arsed to hit "
 "Ctrl"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:116
+#: data/rollit.metainfo.xml.in:117
 msgid ""
 "More accessible accels for the TTRPG GMs who use their laptop while GMing"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:117
+#: data/rollit.metainfo.xml.in:118
 msgid "Custom can go HIGHER. UP TO 1000. Roll MASSIVE DICES"
 msgstr ""
 
-#: data/rollit.metainfo.xml.in:118
+#: data/rollit.metainfo.xml.in:119
 msgid "Now in German"
 msgstr ""
 
